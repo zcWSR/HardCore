@@ -1,0 +1,62 @@
+//variables
+
+//contents:
+
+// 1.Media Query Rangs
+// 2.Grid
+// 3.Navbar
+
+
+// 1.Media Query Rangs
+// ======================
+
+$small-screen: 768px !default;
+$medium-screen: 992px !default;
+$large-screen: 1200px !default;
+$ultra-screen: 1900px !default;
+
+$small-screen-up: 769px !default;
+$medium-screen-up: 993px !default;
+$large-screen-up: 1899px !default;
+$ultra-screen-up: 2499 !default;
+$screen-max: 2500px !default;
+
+$medium-and-up: "only screen and (min-width: #{$small-screen-up})" !default;
+$large-and-up: "only screen and (min-width: #{$medium-screen-up})" !default;
+$ultra-and-up: "only screen and (min-width: #{$large-screen-up})" !default;
+$max-and-mugen: "only screen and (min-width: #{$ultra-screen-up})" !default;
+
+$small-and-down: "only screen and (max-width: #{$small-screen})" !default;
+$medium-and-down: "only screen and (max-width: #{$medium-screen})" !default;
+$large-and-down: "only screen and (max-width: #{$large-screen})" !default;
+$ultra-and-down: "only screen and (max-width: #{$ultra-screen})" !default;
+
+
+// 2.Grid
+// =====================
+
+$num-cols: 24 !default;
+$gutter-width: 24px !default;
+$small-gutter-width: 16px !default;
+
+
+// 3.Header
+// =====================
+
+$small-header-height: 50px;
+$medium-header-height: 80px;
+$big-header-height: 160px;
+$ultra-header-height: 40vh;
+
+$header-background-color: rgba(33, 33, 33, 0.9);
+$header-content-color: rgb(193, 193, 193);
+// 4.Font
+// =====================
+$off-black: rgba(0, 0, 0, 0.87) !default;
+// Header Styles
+$h1-fontsize: 4.2rem !default;
+$h2-fontsize: 3.56rem !default;
+$h3-fontsize: 2.92rem !default;
+$h4-fontsize: 2.28rem !default;
+$h5-fontsize: 1.64rem !default;
+$h6-fontsize: 1rem !default;

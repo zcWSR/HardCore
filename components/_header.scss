@@ -1,0 +1,27 @@
+
+.small-header {
+    @include header-classes($small-header-height);
+}
+
+header, .header {
+    @include header-classes($medium-header-height);
+
+}
+
+.big-header {
+    @include header-classes();
+}
+
+.ultra-header {
+    @include header-classes();
+}
+
+
+
+
+
+
+
+
+
+

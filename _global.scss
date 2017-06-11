@@ -1,0 +1,150 @@
+html {
+    box-sizing: border-box;
+}
+
+article, aside, blockquote, body, button, code, dd, details, div, dl, dt, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, input, legend, li, menu, nav, ol, p, pre, section, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+
+*, *:before, *:after {
+ box-sizing: inherit;
+}
+
+//填充满整个父元素
+.fill-parent {
+    height: 100%;
+    width: 100%;
+}
+
+//清除浮动
+.clear-float {
+    clear: both;
+}
+
+.clear-float-left {
+    clear: left;
+}
+
+.clear-float-right {
+    clear: right;
+}
+
+//清除fix
+.clear-fix {
+    zoom: 1;
+}
+
+// 分割线
+.parting-line-left {
+    border-left: 1px solid color("grey", "base");
+}
+
+.parting-line-right {
+    border-right: 1px solid color("grey", "base");
+}
+
+.parting-line-top {
+    border-top: 1px solid color("grey", "base");
+}
+
+.parting-line-bottom {
+    border-bottom: 1px solid color("grey", "base");
+}
+
+//背景基色
+.global-background {
+    background-color: color("grey", "lighten-4");
+}
+
+//内容对齐
+.block-center-align {
+    @include block-center-align; 
+}
+
+.block-valign-wrapper {
+    @include block-valign-wrapper;
+}
+
+.block-center-on-small {
+    @media #{$small-and-down} {
+        @include block-center-align;
+    }
+}
+
+.center-on-small {
+    @media #{$small-and-down} {
+        @include center-align;
+    }
+}
+
+//文字对齐
+.left-align {
+  @include left-align;
+}
+
+.right-align {
+  @include right-align;
+}
+
+.center, .center-align {
+  @include center-align;
+}
+
+.valign-wrapper {
+    @include valign-wrapper;
+}
+
+//条件显示隐藏
+
+.hide-on-small-only, .hide-on-small-and-down {
+  @media #{$small-and-down} {
+    display: none !important;
+  }
+}
+.hide-on-med-and-down {
+  @media #{$medium-and-down} {
+    display: none !important;
+  }
+}
+.hide-on-med-and-up {
+  @media #{$medium-and-up} {
+    display: none !important;
+  }
+}
+.hide-on-med-only {
+  @media only screen and (min-width: $small-screen) and (max-width: $medium-screen) {
+    display: none !important;
+  }
+}
+.hide-on-large-only {
+  @media #{$large-and-up} {
+    display: none !important;
+  }
+}
+.show-on-large {
+  @media #{$large-and-up} {
+    display: block !important;
+  }
+}
+.show-on-medium {
+  @media only screen and (min-width: $small-screen) and (max-width: $medium-screen) {
+    display: block !important;
+  }
+}
+.show-on-small {
+  @media #{$small-and-down} {
+    display: block !important;
+  }
+}
+.show-on-medium-and-up {
+  @media #{$medium-and-up} {
+    display: block !important;
+  }
+}
+.show-on-medium-and-down {
+  @media #{$medium-and-down} {
+    display: block !important;
+  }
+}
+
