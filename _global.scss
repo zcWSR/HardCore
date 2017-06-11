@@ -96,6 +96,9 @@ article, aside, blockquote, body, button, code, dd, details, div, dl, dt, fields
 }
 
 //条件显示隐藏
+.hide {
+  display: none !important;
+}
 
 .hide-on-small-only, .hide-on-small-and-down {
   @media #{$small-and-down} {

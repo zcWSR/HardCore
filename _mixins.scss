@@ -47,7 +47,7 @@
         $i: $i + 1;
     }
 
-    $i: 1;
+    $i: 0;
     @while $i <= $num-cols {
         $perc: unquote((($i / $num-cols) * 100) + "%");
         @include get-pull-and-push($affix, $i, $perc);
@@ -59,24 +59,22 @@
 // Header
 @mixin header-logo-and-menu {
     .logo {
+        position: absolute;
         padding: 0 $small-gutter-width;
         font-size: $small-header-height * 0.70;
         &.center {
-            position: absolute;
             left: 50%;
             transform: translateX(-50%);
         }
         
         &.center-on-small {
             @media #{$small-and-down} {
-                position: absolute;
                 left: 50%;
                 transform: translateX(-50%);
             }
         }
 
         &.right {
-            position: absolute;
             left: auto;
             right: 0;
         }
@@ -108,8 +106,6 @@
             transition: background-color .3s;
             float: left;
             a {
-                display: block;
-                padding:0 $gutter-width;
                 transition: background-color 0.3s;
                 //line-height: inherit;
                 &:hover {
@@ -119,30 +115,42 @@
             
         }
     }
+
+    a {
+        display: block;
+        padding: 0 $gutter-width;
+    }
 }
 
 @mixin header-classes($header-height: 0) {
+
     position: relative;
     height: $header-height;
     background-color: $header-background-color;
+    overflow: hidden;
     color: $header-content-color;
     &.fix-top {
+        z-index: 99;
         position: fixed;
         width: 100%;
     }
-    @if $header-height != 0 {
+    @if $header-height < $medium-header-height {
         line-height: $header-height;
         @include header-logo-and-menu();
     }
 
-    // > [class*="container"] {
-    //     height: 100%;
-    //     padding-top: 0;
-    //     padding-bottom: 0;
-    //     .row {
-    //         height: 100%;
-    //     }
-    // }
+    &.blur:before {
+        content: '';
+        position: absolute;
+        top:0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: inherit;
+        filter: blur(3px);
+        margin: -3px;
+    }
+
 }
 
 

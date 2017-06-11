@@ -9,12 +9,28 @@ header, .header {
 }
 
 .big-header {
-    @include header-classes();
+    @include header-classes($big-header-height);
 }
 
 .ultra-header {
-    @include header-classes();
+    @include header-classes($ultra-header-height);
 }
+
+// .padding-from-small-header {
+//     padding-top: $small-header-height + $gutter-width;
+// }
+
+// .padding-from-medium-header {
+//     padding-top: $medium-header-height + $gutter-width;
+// }
+
+// .padding-from-big-header {
+//     padding-top: $big-header-height + $gutter-width;
+// }
+
+// .padding-from-ultra-header {
+//     padding-top: $ultra-header-height;
+// }
 
 
 

@@ -1,9 +1,10 @@
-@import "variables";
-@import "mixins";
-@import "colors";
-@import "typography";
+@import 'variables';
+@import 'mixins';
 
-@import "global";
-@import "grid";
+@import 'colors';
+@import 'typography';
+@import 'global';
+@import 'grid';
 
-@import "components/header"
+@import 'components/header';
+@import 'style'

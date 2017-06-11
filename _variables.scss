@@ -36,17 +36,17 @@ $ultra-and-down: "only screen and (max-width: #{$ultra-screen})" !default;
 // =====================
 
 $num-cols: 24 !default;
-$gutter-width: 24px !default;
-$small-gutter-width: 16px !default;
+$gutter-width: 1.5em !default;
+$small-gutter-width: 1em !default;
 
 
 // 3.Header
 // =====================
 
-$small-header-height: 50px;
-$medium-header-height: 80px;
-$big-header-height: 160px;
-$ultra-header-height: 40vh;
+$small-header-height: 3em;
+$medium-header-height: 5em;
+$big-header-height: 10em;
+$ultra-header-height: 25em;
 
 $header-background-color: rgba(33, 33, 33, 0.9);
 $header-content-color: rgb(193, 193, 193);
