@@ -1,28 +1,15 @@
-.header-background {
-    background: url("bg.jpg") 0 90% / cover;
-    ul li a:hover {
-        background-color: rgba(255,255,255, .3);
-    }
-}
-
-.jumbotron {
+.jumbotron-background {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    min-width: 15em;
-    margin:0 auto;
-    text-align: center;
-    color: rgba(0,0,0,.7);
-    h1 {
-        font-size: 4em;
-        margin-bottom: 0.5em;
-    }
-
-    span {
-        width: 110%;
-        border-top: 2px solid rgba(0,0,0,.7);
-        font-size: 1.5em;
-        padding-top: 0.5em;
+    left: 0; right: 0; top: 0; bottom: 0;
+    background: url("bg.jpg") 0 90% / cover;
+    filter: blur(2px);
+    margin: -2px;
+    z-index: -1;
+    // ul li a:hover {
+    //     background-color: rgba(255,255,255, .3);
+    // }
+    &.blur {
+        filter: blur(3px);
+        margin: -3px;
     }
 }

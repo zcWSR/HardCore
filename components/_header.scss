@@ -16,21 +16,25 @@ header, .header {
     @include header-classes($ultra-header-height);
 }
 
-// .padding-from-small-header {
-//     padding-top: $small-header-height + $gutter-width;
-// }
+// 巨幅
+.jumbotron {
+    position: relative;
+    height: $ultra-header-height;
+    padding: 2rem 1rem;
+    color: rgba(0,0,0,0.7);
+    overflow: hidden;
+    h1 {
+        font-size: 4em;
+        margin-bottom: 0.5em;
+    }
 
-// .padding-from-medium-header {
-//     padding-top: $medium-header-height + $gutter-width;
-// }
-
-// .padding-from-big-header {
-//     padding-top: $big-header-height + $gutter-width;
-// }
-
-// .padding-from-ultra-header {
-//     padding-top: $ultra-header-height;
-// }
+    span {
+        width: 110%;
+        border-top: 2px solid rgba(0,0,0,.7);
+        font-size: 1.5em;
+        padding-top: 0.5em;
+    }
+}
 
 
 

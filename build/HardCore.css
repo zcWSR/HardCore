@@ -1782,7 +1782,7 @@ article, aside, blockquote, body, button, code, dd, details, div, dl, dt, fields
   display: block;
   margin: 0 auto !important;
   width: 100%;
-  padding: 1.5em; }
+  padding: 1.5rem; }
   @media only screen and (min-width: 769px) {
     .container {
       width: 85%; } }
@@ -1794,7 +1794,7 @@ article, aside, blockquote, body, button, code, dd, details, div, dl, dt, fields
       width: 70%; } }
 
 .row {
-  margin: 0 -2.25em;
+  margin: 0 -2.25rem;
   overflow: visible; }
   @media only screen and (max-width: 768px) {
     .row {
@@ -1807,7 +1807,7 @@ article, aside, blockquote, body, button, code, dd, details, div, dl, dt, fields
     min-height: 1px;
     box-sizing: border-box;
     float: left;
-    padding: 0 0.75em; }
+    padding: 0 0.75rem; }
     .row .col[class*="push-"], .row .col[class*="pull-"] {
       position: relative; }
     .row .col.s1 {
@@ -2408,19 +2408,19 @@ article, aside, blockquote, body, button, code, dd, details, div, dl, dt, fields
 
 .small-header {
   position: relative;
-  height: 3em;
+  height: 3rem;
   background-color: rgba(33, 33, 33, 0.9);
   overflow: hidden;
   color: #c1c1c1;
-  line-height: 3em; }
+  line-height: 3rem; }
   .small-header.fix-top {
     z-index: 99;
     position: fixed;
     width: 100%; }
   .small-header .logo {
     position: absolute;
-    padding: 0 1em;
-    font-size: 2.1em; }
+    padding: 0 1rem;
+    font-size: 2.1rem; }
     .small-header .logo.center {
       left: 50%;
       transform: translateX(-50%); }
@@ -2431,11 +2431,20 @@ article, aside, blockquote, body, button, code, dd, details, div, dl, dt, fields
     .small-header .logo.right {
       left: auto;
       right: 0; }
+    .small-header .logo img {
+      float: left;
+      margin: 0.3rem 0;
+      width: 2.4rem;
+      border: solid #c1c1c1 1px;
+      border-radius: 50%; }
+    .small-header .logo a {
+      float: left;
+      margin-left: 1rem; }
   .small-header ul {
     position: absolute;
     top: 0;
     right: 0;
-    margin: 0 1em;
+    margin: 0 1rem;
     list-style-type: none; }
     .small-header ul.center {
       right: 50%;
@@ -2448,49 +2457,74 @@ article, aside, blockquote, body, button, code, dd, details, div, dl, dt, fields
         display: none; } }
     .small-header ul li {
       transition: background-color .3s;
-      float: left; }
+      float: left;
+      padding: 0 1.5rem; }
       .small-header ul li a {
         transition: background-color 0.3s; }
         .small-header ul li a:hover {
           background-color: black; }
-  .small-header a {
-    display: block;
-    padding: 0 1.5em; }
-  .small-header.blur:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: inherit;
-    filter: blur(3px);
-    margin: -3px; }
 
 header, .header {
   position: relative;
-  height: 5em;
+  height: 5rem;
   background-color: rgba(33, 33, 33, 0.9);
   overflow: hidden;
-  color: #c1c1c1; }
+  color: #c1c1c1;
+  line-height: 5rem; }
   header.fix-top, .header.fix-top {
     z-index: 99;
     position: fixed;
     width: 100%; }
-  header.blur:before, .header.blur:before {
-    content: '';
+  header .logo, .header .logo {
+    position: absolute;
+    padding: 0 1rem;
+    font-size: 2.1rem; }
+    header .logo.center, .header .logo.center {
+      left: 50%;
+      transform: translateX(-50%); }
+    @media only screen and (max-width: 768px) {
+      header .logo.center-on-small, .header .logo.center-on-small {
+        left: 50%;
+        transform: translateX(-50%); } }
+    header .logo.right, .header .logo.right {
+      left: auto;
+      right: 0; }
+    header .logo img, .header .logo img {
+      float: left;
+      margin: 0.5rem 0;
+      width: 4rem;
+      border: solid #c1c1c1 1px;
+      border-radius: 50%; }
+    header .logo a, .header .logo a {
+      float: left;
+      margin-left: 1rem; }
+  header ul, .header ul {
     position: absolute;
     top: 0;
-    bottom: 0;
-    left: 0;
     right: 0;
-    background: inherit;
-    filter: blur(3px);
-    margin: -3px; }
+    margin: 0 1rem;
+    list-style-type: none; }
+    header ul.center, .header ul.center {
+      right: 50%;
+      transform: translateX(50%); }
+    header ul.left, .header ul.left {
+      left: 0;
+      right: auto; }
+    @media only screen and (max-width: 768px) {
+      header ul.hide-on-small, .header ul.hide-on-small {
+        display: none; } }
+    header ul li, .header ul li {
+      transition: background-color .3s;
+      float: left;
+      padding: 0 1.5rem; }
+      header ul li a, .header ul li a {
+        transition: background-color 0.3s; }
+        header ul li a:hover, .header ul li a:hover {
+          background-color: black; }
 
 .big-header {
   position: relative;
-  height: 10em;
+  height: 10rem;
   background-color: rgba(33, 33, 33, 0.9);
   overflow: hidden;
   color: #c1c1c1; }
@@ -2498,20 +2532,10 @@ header, .header {
     z-index: 99;
     position: fixed;
     width: 100%; }
-  .big-header.blur:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: inherit;
-    filter: blur(3px);
-    margin: -3px; }
 
 .ultra-header {
   position: relative;
-  height: 25em;
+  height: 25rem;
   background-color: rgba(33, 33, 33, 0.9);
   overflow: hidden;
   color: #c1c1c1; }
@@ -2519,31 +2543,13 @@ header, .header {
     z-index: 99;
     position: fixed;
     width: 100%; }
-  .ultra-header.blur:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: inherit;
-    filter: blur(3px);
-    margin: -3px; }
-
-.header-background {
-  background: url("bg.jpg") 0 90%/cover; }
-  .header-background ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.3); }
 
 .jumbotron {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  min-width: 15em;
-  margin: 0 auto;
-  text-align: center;
-  color: rgba(0, 0, 0, 0.7); }
+  position: relative;
+  height: 25rem;
+  padding: 2rem 1rem;
+  color: rgba(0, 0, 0, 0.7);
+  overflow: hidden; }
   .jumbotron h1 {
     font-size: 4em;
     margin-bottom: 0.5em; }
@@ -2552,3 +2558,17 @@ header, .header {
     border-top: 2px solid rgba(0, 0, 0, 0.7);
     font-size: 1.5em;
     padding-top: 0.5em; }
+
+.jumbotron-background {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: url("bg.jpg") 0 90%/cover;
+  filter: blur(2px);
+  margin: -2px;
+  z-index: -1; }
+  .jumbotron-background.blur {
+    filter: blur(3px);
+    margin: -3px; }

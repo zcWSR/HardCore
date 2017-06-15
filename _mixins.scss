@@ -57,11 +57,12 @@
 
 
 // Header
-@mixin header-logo-and-menu {
+@mixin header-logo-and-menu($header-height) {
     .logo {
         position: absolute;
         padding: 0 $small-gutter-width;
         font-size: $small-header-height * 0.70;
+
         &.center {
             left: 50%;
             transform: translateX(-50%);
@@ -77,6 +78,19 @@
         &.right {
             left: auto;
             right: 0;
+        }
+
+        img {
+            float: left;
+            margin: ($header-height - $header-height * .8)/2 0;
+            width: $header-height * .8;
+            border: solid $header-content-color 1px;
+            border-radius: 50%;
+        }
+
+        a {
+            float: left;
+            margin-left: $small-gutter-width;
         }
         
     }
@@ -105,6 +119,7 @@
         li {
             transition: background-color .3s;
             float: left;
+            padding: 0 $gutter-width;
             a {
                 transition: background-color 0.3s;
                 //line-height: inherit;
@@ -114,11 +129,6 @@
             }
             
         }
-    }
-
-    a {
-        display: block;
-        padding: 0 $gutter-width;
     }
 }
 
@@ -134,23 +144,10 @@
         position: fixed;
         width: 100%;
     }
-    @if $header-height < $medium-header-height {
+    @if $header-height <= $medium-header-height {
         line-height: $header-height;
-        @include header-logo-and-menu();
+        @include header-logo-and-menu($header-height);
     }
-
-    &.blur:before {
-        content: '';
-        position: absolute;
-        top:0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: inherit;
-        filter: blur(3px);
-        margin: -3px;
-    }
-
 }
 
 
