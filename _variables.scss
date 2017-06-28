@@ -5,7 +5,8 @@
 // 1.Media Query Rangs
 // 2.Grid
 // 3.Navbar
-
+// 4.Font
+// 5.Card
 
 // 1.Media Query Rangs
 // ======================
@@ -50,6 +51,8 @@ $ultra-header-height: 25rem;
 
 $header-background-color: rgba(33, 33, 33, 0.9);
 $header-content-color: rgb(193, 193, 193);
+
+
 // 4.Font
 // =====================
 $off-black: rgba(0, 0, 0, 0.87) !default;
@@ -60,3 +63,13 @@ $h3-fontsize: 2.92rem !default;
 $h4-fontsize: 2.28rem !default;
 $h5-fontsize: 1.64rem !default;
 $h6-fontsize: 1rem !default;
+
+// 5.Card 
+// ======================
+
+
+$card-header-height: 10rem;
+$card-title-fontsize: 2.5rem;
+$card-content-fontsize: 1rem;
+
+

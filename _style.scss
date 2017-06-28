@@ -2,8 +2,6 @@
     position: absolute;
     left: 0; right: 0; top: 0; bottom: 0;
     background: url("bg.jpg") 0 90% / cover;
-    filter: blur(2px);
-    margin: -2px;
     z-index: -1;
     // ul li a:hover {
     //     background-color: rgba(255,255,255, .3);
@@ -12,4 +10,12 @@
         filter: blur(3px);
         margin: -3px;
     }
+}
+
+.base-title {
+    min-width: 240px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%) ;
 }

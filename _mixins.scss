@@ -25,6 +25,16 @@
     align-items: center;
 }
 
+// liner-background
+@mixin liner-background-2($deg, $first, $fir-length, $second, $sec-length) {
+    background-image: linear-gradient($deg, $first 0, $first $fir-length, $second $fir-length,$second 100%);
+}
+
+@mixin liner-background-3($deg, $first, $fir-length, $second, $sec-length, $third, $thr-length) {
+    background-image: linear-gradient($deg, $first 0, $first $fir-length, $second $fir-length,$second $fir-length+$sec-length, $third $fir-length+$sec-length, $third 100%);
+}
+
+
 
 // Grid
 @mixin get-pull-and-push($affix, $i, $perc) {
@@ -83,6 +93,7 @@
         img {
             float: left;
             margin: ($header-height - $header-height * .8)/2 0;
+            margin-right: $small-gutter-width;
             width: $header-height * .8;
             border: solid $header-content-color 1px;
             border-radius: 50%;
@@ -90,7 +101,6 @@
 
         a {
             float: left;
-            margin-left: $small-gutter-width;
         }
         
     }
@@ -120,13 +130,10 @@
             transition: background-color .3s;
             float: left;
             padding: 0 $gutter-width;
-            a {
-                transition: background-color 0.3s;
-                //line-height: inherit;
-                &:hover {
-                    background-color: black;
-                }   
-            }
+            transition: background-color 0.3s;
+            &:hover {
+                background-color: black;
+            }   
             
         }
     }

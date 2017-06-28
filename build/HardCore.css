@@ -1,3 +1,9 @@
+@keyframes a {
+  0% {
+    background-size: 100% 100%, 100% 100%, 100% 100%; }
+  100% {
+    background-size: 90% 100%, 110% 100%, 100% 100%; } }
+
 .materialize-red {
   background-color: #e51c23 !important; }
 
@@ -1773,6 +1779,12 @@ article, aside, blockquote, body, button, code, dd, details, div, dl, dt, fields
   .show-on-medium-and-down {
     display: block !important; } }
 
+.to-grey {
+  filter: grayscale(60%);
+  transition: filter .3s; }
+  .to-grey:hover {
+    filter: grayscale(0); }
+
 .container-full {
   display: block;
   margin: 0 auto !important;
@@ -2434,12 +2446,12 @@ article, aside, blockquote, body, button, code, dd, details, div, dl, dt, fields
     .small-header .logo img {
       float: left;
       margin: 0.3rem 0;
+      margin-right: 1rem;
       width: 2.4rem;
       border: solid #c1c1c1 1px;
       border-radius: 50%; }
     .small-header .logo a {
-      float: left;
-      margin-left: 1rem; }
+      float: left; }
   .small-header ul {
     position: absolute;
     top: 0;
@@ -2458,11 +2470,10 @@ article, aside, blockquote, body, button, code, dd, details, div, dl, dt, fields
     .small-header ul li {
       transition: background-color .3s;
       float: left;
-      padding: 0 1.5rem; }
-      .small-header ul li a {
-        transition: background-color 0.3s; }
-        .small-header ul li a:hover {
-          background-color: black; }
+      padding: 0 1.5rem;
+      transition: background-color 0.3s; }
+      .small-header ul li:hover {
+        background-color: black; }
 
 header, .header {
   position: relative;
@@ -2492,12 +2503,12 @@ header, .header {
     header .logo img, .header .logo img {
       float: left;
       margin: 0.5rem 0;
+      margin-right: 1rem;
       width: 4rem;
       border: solid #c1c1c1 1px;
       border-radius: 50%; }
     header .logo a, .header .logo a {
-      float: left;
-      margin-left: 1rem; }
+      float: left; }
   header ul, .header ul {
     position: absolute;
     top: 0;
@@ -2516,11 +2527,10 @@ header, .header {
     header ul li, .header ul li {
       transition: background-color .3s;
       float: left;
-      padding: 0 1.5rem; }
-      header ul li a, .header ul li a {
-        transition: background-color 0.3s; }
-        header ul li a:hover, .header ul li a:hover {
-          background-color: black; }
+      padding: 0 1.5rem;
+      transition: background-color 0.3s; }
+      header ul li:hover, .header ul li:hover {
+        background-color: black; }
 
 .big-header {
   position: relative;
@@ -2551,13 +2561,389 @@ header, .header {
   color: rgba(0, 0, 0, 0.7);
   overflow: hidden; }
   .jumbotron h1 {
-    font-size: 4em;
-    margin-bottom: 0.5em; }
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    text-align: center; }
   .jumbotron span {
-    width: 110%;
+    display: block;
     border-top: 2px solid rgba(0, 0, 0, 0.7);
-    font-size: 1.5em;
-    padding-top: 0.5em; }
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    text-align: center; }
+
+.card {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2); }
+  .card .card-header {
+    position: relative;
+    height: 10rem;
+    overflow: hidden;
+    background-position: 0 50%;
+    background-size: cover;
+    background: linear-gradient(45deg, #424242 50%, transparent 50%) no-repeat, linear-gradient(45deg, #9e9e9e 50%, transparent 50%) no-repeat, linear-gradient(45deg, transparent 50%, transparent 50%) no-repeat;
+    background-size: 100% 100%, 100% 100%, 100% 100%;
+    transition: background ease-in-out 0.1s; }
+    .card .card-header span {
+      background-color: rgba(255, 255, 255, 0.5);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 0 1.5rem;
+      margin: 1.5rem 0;
+      font-size: 2.5rem;
+      line-height: normal;
+      font-weight: 300;
+      color: black; }
+    .card .card-header:hover {
+      background-size: 97.5% 100%, 102.5% 100%, 100% 100%; }
+  .card .card-content {
+    margin: 0 1.5rem;
+    padding: 1.5rem 0;
+    font-size: 1rem;
+    border-bottom: 1px solid rgba(160, 160, 160, 0.7); }
+  .card .card-action {
+    margin: 0 1.5rem;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+    color: #3f51b5; }
+    .card .card-action .right {
+      display: block;
+      position: relative;
+      right: 0; }
+
+.markdown::before {
+  display: table;
+  content: ''; }
+
+.markdown:after {
+  display: table;
+  content: ''; }
+
+.markdown > *:first-child {
+  margin-top: 0 !important; }
+
+.markdown > *:last-child {
+  margin-bottom: 0 !important; }
+
+.markdown a:not([href]) {
+  color: inherit;
+  text-decoration: none; }
+
+.markdown .absent {
+  color: #cb2431; }
+
+.markdown .anchor {
+  float: left;
+  padding-right: 4px;
+  margin-left: -20px;
+  line-height: 1; }
+
+.markdown .anchor:focus {
+  outline: none; }
+
+.markdown p,
+.markdown blockquote,
+.markdown ul,
+.markdown ol,
+.markdown dl,
+.markdown table,
+.markdown pre {
+  margin-top: 0;
+  margin-bottom: 16px; }
+
+.markdown hr {
+  height: 0.25rem;
+  padding: 0;
+  margin: 24px 0;
+  background-color: #e1e4e8;
+  border: 0; }
+
+.markdown blockquote {
+  padding: 0 1rem;
+  color: #6a737d;
+  border-left: 0.25rem solid #dfe2e5; }
+
+.markdown blockquote > :first-child {
+  margin-top: 0; }
+
+.markdown blockquote > :last-child {
+  margin-bottom: 0; }
+
+.markdown kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #444d56;
+  vertical-align: middle;
+  background-color: #fafbfc;
+  border: solid 1px #c6cbd1;
+  border-bottom-color: #959da5;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #959da5; }
+
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  line-height: 1.25; }
+
+.markdown h1 {
+  padding-bottom: 0.2rem;
+  font-size: 2rem;
+  border-bottom: 1px solid #eaecef; }
+
+.markdown h2 {
+  padding-bottom: 0.3rem;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #eaecef; }
+
+.markdown h3 {
+  font-size: 1.25rem; }
+
+.markdown h4 {
+  font-size: 1rem; }
+
+.markdown h5 {
+  font-size: 0.875rem; }
+
+.markdown h6 {
+  font-size: 0.85rem;
+  color: #6a737d; }
+
+.markdown ul,
+.markdown ol {
+  padding-left: 2rem; }
+
+.markdown li > p {
+  margin-top: 16px; }
+
+.markdown li + li {
+  margin-top: 0.25rem; }
+
+.markdown dl {
+  padding: 0; }
+
+.markdown dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 600; }
+
+.markdown dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px; }
+
+.markdown table {
+  display: block;
+  width: 100%;
+  overflow: auto; }
+
+.markdown table th {
+  font-weight: 600; }
+
+.markdown table th,
+.markdown table td {
+  padding: 6px 13px;
+  border: 1px solid #dfe2e5; }
+
+.markdown table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1; }
+
+.markdown table tr:nth-child(2n) {
+  background-color: #f6f8fa; }
+
+.markdown table img {
+  background-color: transparent; }
+
+.markdown img {
+  max-width: 100%;
+  box-sizing: content-box;
+  background-color: #fff; }
+
+.markdown img[align=right] {
+  padding-left: 20px; }
+
+.markdown img[align=left] {
+  padding-right: 20px; }
+
+.markdown .emoji {
+  max-width: none;
+  vertical-align: text-top;
+  background-color: transparent; }
+
+.markdown span.frame {
+  display: block;
+  overflow: hidden; }
+
+.markdown span.frame > span {
+  display: block;
+  float: left;
+  width: auto;
+  padding: 7px;
+  margin: 13px 0 0;
+  overflow: hidden;
+  border: 1px solid #dfe2e5; }
+
+.markdown span.frame span img {
+  display: block;
+  float: left; }
+
+.markdown span.frame span span {
+  display: block;
+  padding: 5px 0 0;
+  clear: both;
+  color: #24292e; }
+
+.markdown span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+
+.markdown span.align-center > span {
+  display: block;
+  margin: 13px auto 0;
+  overflow: hidden;
+  text-align: center; }
+
+.markdown span.align-center span img {
+  margin: 0 auto;
+  text-align: center; }
+
+.markdown span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+
+.markdown span.align-right > span {
+  display: block;
+  margin: 13px 0 0;
+  overflow: hidden;
+  text-align: right; }
+
+.markdown span.align-right span img {
+  margin: 0;
+  text-align: right; }
+
+.markdown span.float-left {
+  display: block;
+  float: left;
+  margin-right: 13px;
+  overflow: hidden; }
+
+.markdown span.float-left span {
+  margin: 13px 0 0; }
+
+.markdown span.float-right {
+  display: block;
+  float: right;
+  margin-left: 13px;
+  overflow: hidden; }
+
+.markdown span.float-right > span {
+  display: block;
+  margin: 13px auto 0;
+  overflow: hidden;
+  text-align: right; }
+
+.markdown code,
+.markdown tt {
+  padding: 0;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(27, 31, 35, 0.05);
+  border-radius: 3px; }
+
+.markdown code::before,
+.markdown code::after,
+.markdown tt::before,
+.markdown tt::after {
+  letter-spacing: -0.2rem;
+  content: "\00a0"; }
+
+.markdown code br,
+.markdown tt br {
+  display: none; }
+
+.markdown del code {
+  text-decoration: inherit; }
+
+.markdown pre {
+  word-wrap: normal; }
+
+.markdown pre > code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0; }
+
+.markdown .highlight {
+  margin-bottom: 16px; }
+
+.markdown .highlight pre {
+  margin-bottom: 0;
+  word-break: normal; }
+
+.markdown .highlight pre,
+.markdown pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f6f8fa;
+  border-radius: 3px; }
+
+.markdown pre code,
+.markdown pre tt {
+  display: inline;
+  max-width: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0; }
+
+.markdown pre code::before,
+.markdown pre code::after,
+.markdown pre tt::before,
+.markdown pre tt::after {
+  content: normal; }
+
+.markdown .csv-data td,
+.markdown .csv-data th {
+  padding: 5px;
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 1;
+  text-align: left;
+  white-space: nowrap; }
+
+.markdown .csv-data .blob-num {
+  padding: 10px 8px 9px;
+  text-align: right;
+  background: #fff;
+  border: 0; }
+
+.markdown .csv-data tr {
+  border-top: 0; }
+
+.markdown .csv-data th {
+  font-weight: 600;
+  background: #f6f8fa;
+  border-top: 0; }
 
 .jumbotron-background {
   position: absolute;
@@ -2566,9 +2952,14 @@ header, .header {
   top: 0;
   bottom: 0;
   background: url("bg.jpg") 0 90%/cover;
-  filter: blur(2px);
-  margin: -2px;
   z-index: -1; }
   .jumbotron-background.blur {
     filter: blur(3px);
     margin: -3px; }
+
+.base-title {
+  min-width: 240px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%); }

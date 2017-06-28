@@ -151,3 +151,12 @@ article, aside, blockquote, body, button, code, dd, details, div, dl, dt, fields
   }
 }
 
+//元素默认灰阶变低，hover后恢复
+.to-grey {
+    filter: grayscale(60%);
+    transition: filter .3s;
+    &:hover{
+      filter: grayscale(0);
+    }
+}
+

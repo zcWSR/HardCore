@@ -1,10 +1,13 @@
 @import 'variables';
 @import 'mixins';
-
+@import 'animate';
+// ===
 @import 'colors';
 @import 'typography';
 @import 'global';
 @import 'grid';
-
+// ===
 @import 'components/header';
+@import 'components/card';
+@import 'components/markdown';
 @import 'style'

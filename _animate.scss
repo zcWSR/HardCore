@@ -1,0 +1,22 @@
+// @keyframes card-background-keyframe {
+//     0% { @include liner-background-3(45deg, color('grey','darken-3'), 50%, color('grey', 'base'), 0, white, 50%)}
+//     25% { @include liner-background-3(22.5deg, color('grey','darken-3'), 45.83%, color('grey', 'base'), 8.33%, white, 45.83%)}
+//     50% { @include liner-background-3(0, color('grey','darken-3'), 41.67%, color('grey', 'base'), 16.67%, white, 41.67%)}
+//     75% { @include liner-background-3(-22.5deg, color('grey','darken-3'), 37.5%, color('grey', 'base'), 25, white, 37.5%)}
+//     100% { @include liner-background-3(-45deg, color('grey','darken-3'), 33.3%, color('grey', 'base'), 33.33%, white, 33.3%)}
+// }
+
+@keyframes a {
+    0% {background-size: 100% 100%, 100% 100%, 100% 100%};
+    100% {background-size: 90% 100%, 110% 100%, 100% 100%}
+}
+
+@mixin card-background-animation() {
+    animation-name: a;
+    animation-duration: .3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+}
+
