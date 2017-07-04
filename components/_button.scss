@@ -1,0 +1,91 @@
+// shard styles
+button,
+.btn,
+.btn-flat,
+input[type="button"],
+input[type="submit"] {
+
+    border: none;
+    border-radius: 1px;
+    display: inline-block;
+    height: $button-height;
+    line-height: $button-line-height;
+    font-size: inherit;
+    vertical-align: middle;
+    padding: $button-padding;
+    will-change: box-shadow, background-size, color;
+    transition: ease-out .2s;
+    outline: none;
+    cursor: pointer;
+
+    &.big-btn {
+        height: $big-button-height;
+        line-height: $big-button-line-height;
+    }
+
+}
+
+//disable share styles
+button:disabled,
+.btn:disabled,
+.btn-flat:disabled,
+input[type="button"]:disabled,
+input[type="submit"]:disabled,
+
+button.disabled,
+.btn.disabled,
+.btn-flat:disabled,
+input[type="button"].disabled,
+input[type="submit"].disabled,
+
+button[disabled],
+.btn[disabled],
+.btn-flat[disabled],
+input[type="button"][disabled],
+input[type="submit"][disabled] {
+    pointer-events: none; //禁止点击
+    cursor: not-allowed;
+    opacity: 0.65;
+}
+
+button,
+.btn,
+input[type="button"],
+input[type="submit"]  {
+    @extend .z-depth-1;
+    background: $button-background-base;
+    background-size: 0 200%, 0 200%, 100% 100%;
+    color: $button-font-color-base;
+
+    &:hover {
+        background-size: 0 200%, 310% 200%, 100% 100%;
+    }
+
+    &:focus {
+        background-size: 310% 200%, 310% 200%, 100% 100%;
+    }
+
+    &:hover {
+        @extend .z-depth-1-half;
+    }
+
+    &:focus {
+        @extend .z-depth-2;
+    }
+}
+
+.btn-flat {
+    background: $button-background-flat;
+    background-size: 0 200%, 0 200%, 100% 100%;
+    color: $button-font-color-flat;
+
+    &:hover {
+        background-size: 0 200%, 310% 200%, 100% 100%;
+        color: $button-font-color-base;
+    }
+
+    &:focus {
+        background-size: 310% 200%, 310% 200%, 100% 100%;
+        color: $button-font-color-base;
+    }
+}

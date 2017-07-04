@@ -102,6 +102,16 @@
         a {
             float: left;
         }
+
+        a:visited {
+            text-decoration: none;
+            color: $header-content-color;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: $header-content-color;
+        }
         
     }
 
@@ -131,9 +141,25 @@
             float: left;
             padding: 0 $gutter-width;
             transition: background-color 0.3s;
+
+            a {
+                line-height: $header-height;
+            }
+            
+            a:visited {
+                text-decoration: none;
+                color: $header-content-color;
+            }
+
+            a:hover {
+                text-decoration: none;
+                color: $header-content-color;
+            }
+
             &:hover {
                 background-color: black;
             }   
+
             
         }
     }

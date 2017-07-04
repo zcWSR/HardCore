@@ -1,9 +1,7 @@
-$card-background: linear-gradient(45deg, color('grey','darken-3') 50%, transparent 50%) no-repeat,
-linear-gradient(45deg, color('grey','base') 50%, transparent 50%) no-repeat,
-linear-gradient(45deg, transparent 50%, transparent 50%) no-repeat;
-
 .card {
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2); 
+    @extend .z-depth-1; 
+    will-change: background, box-shadow; 
+    transition: .3s;
     .card-header {
         position: relative;
         height: $card-header-height;
@@ -11,8 +9,9 @@ linear-gradient(45deg, transparent 50%, transparent 50%) no-repeat;
         background-position: 0 50%;
         background-size: cover;
         background: $card-background;
-        background-size: 100% 100%, 100% 100%, 100% 100%;
-        transition: background ease-in-out 0.1s;
+        background-size: 100% 100%;
+        will-change: background, box-shadow; 
+        transition: .3s;
         span {
             background-color: rgba(255,255,255, .5);
             position: absolute;
@@ -23,11 +22,31 @@ linear-gradient(45deg, transparent 50%, transparent 50%) no-repeat;
             font-size: $card-title-fontsize;
             line-height: normal;
             font-weight: 300;
-            color: black;
+            @extend .z-depth-1;
+            transition: box-shadow ease-out .3s;
+            a {
+                text-decoration: none;
+                color: black;
+                transition: color ease-out .3s;
+
+            }
+
+            a:hover {
+                text-decoration: none;
+                color: color('grey', 'darken-3');
+            }
+
+            a:visited {
+                color: color('grey', 'darken-2');
+            }
+
+            &:hover {
+                @extend .z-depth-1-half;
+            }
         }
 
         &:hover {
-            background-size: 97.5% 100%, 102.5% 100%, 100% 100%;
+            background-size: 97.5% 100%;
         }
 
     }
@@ -36,20 +55,30 @@ linear-gradient(45deg, transparent 50%, transparent 50%) no-repeat;
         margin: 0 $gutter-width;
         padding: $gutter-width 0;
         font-size: $card-content-fontsize;
-        border-bottom: 1px solid rgba(160,160,160,.7);
+        
     }
-
+    
     .card-action{
         margin: 0 $gutter-width;
         padding: $small-gutter-width 0;
         font-size: $card-content-fontsize * 1.2;
         color: color('indigo', 'base');
-        
+        border-top: 1px solid rgba(160,160,160,.7);
+
         .right {
-            display: block;
-            position: relative;
-            right: 0;
+            float: right;
+            margin-bottom: $small-gutter-width;
         }
+    }
+
+    &:hover {
+        @extend .z-depth-1-half;
+    }
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
     }
 
 }

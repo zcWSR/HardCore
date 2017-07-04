@@ -63,13 +63,34 @@ $h3-fontsize: 2.92rem !default;
 $h4-fontsize: 2.28rem !default;
 $h5-fontsize: 1.64rem !default;
 $h6-fontsize: 1rem !default;
+$global-font-color: #424242;
 
 // 5.Card 
 // ======================
-
-
 $card-header-height: 10rem;
 $card-title-fontsize: 2.5rem;
 $card-content-fontsize: 1rem;
+$card-background: linear-gradient(45deg, color('grey','darken-3') 50%, transparent 50%) no-repeat;
+
+
+// 6.Button
+// ======================
+$button-height: 36px;
+$big-button-height: $button-height * 1.5;
+$button-line-height: $button-height;
+$big-button-line-height: $button-height * 1.5;
+$button-padding: 0 1.5rem;
+$button-background-base: 
+linear-gradient(45deg, color('light-blue', 'darken-3') 50%, transparent 50%) no-repeat,
+linear-gradient(45deg, color('light-blue', 'darken-1') 50%, transparent 50%) no-repeat,
+linear-gradient(45deg, color('light-blue', 'darken-2') 100%, transparent 100%) no-repeat;
+$button-font-color-base: #fff;
+
+$button-background-flat: 
+linear-gradient(45deg, color('light-blue', 'darken-3') 50%, transparent 50%) no-repeat,
+linear-gradient(45deg, color('grey', 'lighten-1') 50%, transparent 50%) no-repeat,
+linear-gradient(45deg, transparent 100%, transparent 100%) no-repeat;
+$button-font-color-flat: color('light-blue', 'darken-3');
+
 
 

@@ -36,6 +36,20 @@ header, .header {
         padding-top: 1rem;
         text-align: center;
     }
+
+    .jumbotron-background {
+        position: absolute;
+        left: 0; right: 0; top: 0; bottom: 0;
+        z-index: -1;
+        transition: filter ease-out 1s; 
+        // ul li a:hover {
+        //     background-color: rgba(255,255,255, .3);
+        // }
+        &.blur {
+            filter: blur(100px);
+            margin: -100px;
+    }
+}
 }
 
 
