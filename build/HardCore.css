@@ -3146,6 +3146,47 @@ input[type="submit"] {
     background-size: 310% 200%, 310% 200%, 100% 100%;
     color: #fff; }
 
+.loading {
+  display: inline-block;
+  position: relative;
+  height: 3rem;
+  width: 3rem; }
+  .loading .item-wrapper {
+    width: 1.5rem;
+    height: 1.5rem;
+    float: left;
+    padding: 0.15rem;
+    animation: loading-item-wrapper-keyframe 1.5s infinite cubic-bezier(0.5, 0, 0.5, 1); }
+    .loading .item-wrapper:nth-child(1) {
+      transform-origin: 100% 100%; }
+    .loading .item-wrapper:nth-child(2) {
+      transform-origin: 0% 100%; }
+    .loading .item-wrapper:nth-child(3) {
+      transform-origin: 100% 0%; }
+    .loading .item-wrapper:nth-child(4) {
+      transform-origin: 0% 0%; }
+    .loading .item-wrapper .item {
+      width: 100%;
+      height: 100%;
+      background-color: #424242;
+      animation: loading-item-keyframe 1.5s infinite cubic-bezier(0.5, 0, 0.5, 1); }
+
+@keyframes loading-item-keyframe {
+  0% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(-90deg); }
+  100% {
+    transform: rotate(-180deg); } }
+
+@keyframes loading-item-wrapper-keyframe {
+  0% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(90deg); }
+  100% {
+    transform: rotate(180deg); } }
+
 .base-title {
   min-width: 240px;
   position: absolute;

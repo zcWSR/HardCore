@@ -92,5 +92,14 @@ linear-gradient(45deg, color('grey', 'lighten-1') 50%, transparent 50%) no-repea
 linear-gradient(45deg, transparent 100%, transparent 100%) no-repeat;
 $button-font-color-flat: color('light-blue', 'darken-3');
 
+// 6.loading
+// ======================
+$loading-item-wrapper-width: 1.5rem;
+$loading-width: $loading-item-wrapper-width * 2;
+$loading-item-width: $loading-item-wrapper-width * 0.8;
+$loading-item-wrapper-padding: $loading-item-wrapper-width * 0.1;
+$loading-animation-time: 1.5s;
+$loading-item-color: $global-font-color;
+
 
 
