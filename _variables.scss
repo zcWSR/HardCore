@@ -63,7 +63,7 @@ $h3-fontsize: 2.92rem !default;
 $h4-fontsize: 2.28rem !default;
 $h5-fontsize: 1.64rem !default;
 $h6-fontsize: 1rem !default;
-$global-font-color: #424242;
+$global-font-color: #444;
 
 // 5.Card 
 // ======================
@@ -98,8 +98,22 @@ $loading-item-wrapper-width: 1.5rem;
 $loading-width: $loading-item-wrapper-width * 2;
 $loading-item-width: $loading-item-wrapper-width * 0.8;
 $loading-item-wrapper-padding: $loading-item-wrapper-width * 0.1;
-$loading-animation-time: 1.5s;
+$loading-animation-time: 1s;
 $loading-item-color: $global-font-color;
+
+// 7.index
+// ======================
+$index-font-color: #444;
+$index-font-color-hover: #777;
+$index-font-size: .75rem;
+
+// 8.pagination
+// ======================
+$pagination-height: 1.8rem;
+$pagination-font-size: 1.3rem;
+$pagination-font-color: $global-font-color;
+$pagination-selected-background: color('light-blue', 'darken-3');
+
 
 
 

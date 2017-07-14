@@ -1,0 +1,68 @@
+.index {
+    position: fixed;
+    &.affix {
+        right: 10px;
+        top: 100px;
+    }
+
+    & > ul {
+        display: block;
+        list-style: none;
+
+        & > li {
+            display: inherit;
+
+            & > a {
+                display: inherit;
+                color: $index-font-color;
+                font-size: $index-font-size;
+                text-align: right;
+                padding: 3px 5px;
+                height: 25px;
+                overflow: visible;
+                will-change: color, opacity, border-radius;
+                transition: .3s ease;
+
+                &::before {
+                    content: '';
+                    float: right;
+                    width: $index-font-size;
+                    height: $index-font-size;
+                    border: 2px solid $index-font-color;
+                    background: transparent;
+                    opacity: .7;
+                }
+
+
+                & > span {
+                    display: block;
+                    line-height: $index-font-size;
+                    overflow: hidden;
+                    margin-right: $index-font-size * 1.5;
+                    opacity: 0;
+                    transition: opacity .3s ease;
+
+                    &:hover {
+                        color: $index-font-color-hover;
+                        opacity: 1;
+                    }
+                }
+                
+            }
+
+            &[active],
+            &.active {
+                & > a > span {
+                    color: $index-font-color;
+                    opacity: 1;
+                }
+                & > a::before {
+                    border-radius: 50%;
+                    background: $index-font-color;
+
+                }
+            }
+        }
+
+    }
+}

@@ -23,6 +23,8 @@ header, .header {
     padding: 2rem 1rem;
     color: rgba(0,0,0,0.7);
     overflow: hidden;
+    transition: height .3s ease;
+
     h1 {
         font-size: 4rem;
         margin-bottom: 1rem;
@@ -48,8 +50,8 @@ header, .header {
         &.blur {
             filter: blur(100px);
             margin: -100px;
+        }
     }
-}
 }
 
 

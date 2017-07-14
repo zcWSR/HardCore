@@ -1,0 +1,52 @@
+ul.pagination {
+    display: block;
+    position: relative;
+    list-style: none;
+    li {
+        display: inline-block;
+        height: $pagination-height;
+        text-align: center;
+        a {
+            display: inherit;
+            line-height: $pagination-height;
+            font-size: $pagination-font-size;
+            padding: 0 .6rem;
+            color: $pagination-font-color;
+            background: $button-background-flat;
+            background-size: 0 200%, 0 200%, 100% 100%;
+            cursor: pointer;
+            will-change: background-size, color;
+            transition: ease-out .2s;
+
+            &:hover {
+                background-size: 0 200%, 400% 200%, 100% 100%;
+                color: $button-font-color-base;
+            }
+
+            &:focus {
+                background-size: 400% 200%, 400% 200%, 100% 100%;
+                color: $button-font-color-base;
+            }
+
+        }
+        &[disabled],
+        &.disabled {
+            a {
+                pointer-events: none;
+                cursor: not-allowed;
+                opacity: 0.65;
+                background: transparent;
+            }
+        }
+
+        &[selected],
+        &.selected {
+            a {
+                pointer-events: none;
+                cursor: default;
+                background: $pagination-selected-background;
+                color: $button-font-color-base;
+            }
+        }
+    }
+}
