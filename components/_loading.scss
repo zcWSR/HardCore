@@ -1,4 +1,4 @@
-.loading {
+.spinner {
     display: inline-block;
     position: relative;
     height: $loading-width;
@@ -51,4 +51,8 @@
         // padding: $loading-item-wrapper-padding;
         transform: rotate(90deg); 
     }
+}
+
+.loading {
+    
 }

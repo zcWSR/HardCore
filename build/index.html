@@ -6,8 +6,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="HardCore.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <!--class="global-background"-->
+<style>
+    html {
+    -ms-overflow-style:none;
+    overflow:-moz-scrollbars-none;
+}
+html::-webkit-scrollbar{width:0px}
+</style>
 <body>
     <header class="small-header fix-top">
         <div class="logo center-on-small">
@@ -21,114 +30,200 @@
             <li><a href="#">item4</a></li>
         </ul>
     </header>
-    <div class="index affix">
-        <ul>
-            <li active><a href="#"><span>哈哈哈</span></a></li>
-            <li><a href="#"><span>立刻就会立刻就会立刻</span></a></li>
-            <li><a href="#"><span>hhhh</span></a></li>
-        </ul>
-    </div>
-    <div class="jumbotron ">
-        <div class="jumbotron-background"
-        style="background: url('bg.jpg') 0 90% / cover;"
-        ></div>
-        <div class="base-title">
-            <h1>zcWSR</h1>
-            <span>靡不有初，鲜克有终</span>
+    <main>
+        <div class="index affix">
+            <ul>
+                <li active><a href="#"><span>哈哈哈</span></a></li>
+                <li><a href="#"><span>立刻就会立刻就会立刻</span></a></li>
+                <li><a href="#"><span>hhhh</span></a></li>
+            </ul>
         </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col s24 m12 l18">
-                <div class="card">
-                                         <!--style="background: url(card-bg.jpg) 0 45% / cover;"-->
-                    <div
-                    style="background: url('card-bg.jpg') 0 45% / cover;"
-                     class="card-header">
-                        <span><a href="/a">目前的规划</a></span>
+        <div class="jumbotron ">
+            <div class="jumbotron-background blur" style="background: url('bg1.png') 0 / cover;"></div>
+            <div class="base-title">
+                <h1 class="title">zcWSR</h1>
+                <div class="split"></div>
+                <p class="subtitle">靡不有初，鲜克有终</p>
+            </div>
+        </div>
+        <div class="global-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col s24 m20 l18 push-l3 push-m2 push-s0 cards-container">
+                    <div class="card-flat">
+                        <!--style="background: url(card-bg.jpg) 0 45% / cover;"-->
+                        <div class="card-header">
+                            <div style="background: url('card-bg.jpg') 0 45% / cover;" class="header-img"></div>
+                            <p><a href="post.html">目前的规划</a></p>
+                        </div>
+                        <div class="card-content markdown">
+                            <p>js、ts之类的写久了，让我产生了一种以后一定要当前端工程师的错觉，明明写了两三年的java，c#，现在都没了兴趣，可能我真的适合干前端，可能真的不是错觉，至少现在我喜欢它。</p>
+                            <p>之前也从工作了的学长的闲言碎语里也听说了，现在为了省事大家都在从native app转到web app，已然是一种趋势，native react的主页也说了能做到：learn once，write anywhere。这么看来write once， run anywhere的时代也不远了，我相信自己选择了一个正确的方向，毕竟从上大学开始就一直在技术上追求新的东西。</p>
+                        </div>
+                        <div class="card-info with-border">
+                            <ul>
+                                <li>
+                                    <i class="material-icons">today</i>
+                                    <ul>
+                                        <li>2017.7.20</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <i class="material-icons">content_paste</i>
+                                    <ul>
+                                        <li><a href="#">code</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <i class="material-icons">label</i>
+                                    <ul>
+                                        <li><a href="#">CSS</a></li>
+                                        <li><a href="#">node</a></li>
+                                        <li><a href="#">webpack</a></li>
+                                        <li><a href="#">nginx</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="card-content markdown">
-                        <p>js、ts之类的写久了，让我产生了一种以后一定要当前端工程师的错觉，明明写了两三年的java，c#，现在都没了兴趣，可能我真的适合干前端，可能真的不是错觉，至少现在我喜欢它。</p>
-                        <p>之前也从工作了的学长的闲言碎语里也听说了，现在为了省事大家都在从native app转到web app，已然是一种趋势，native react的主页也说了能做到：learn once，write anywhere。这么看来write once， run anywhere的时代也不远了，我相信自己选择了一个正确的方向，毕竟从上大学开始就一直在技术上追求新的东西。</p>
+                    <div class="card-flat">
+                        <!--style="background: url(card-bg.jpg) 0 45% / cover;"-->
+                        <div class="card-header">
+                            <div style="background: url('card-bg.jpg') 0 45% / cover;" class="header-img"></div>
+                            <p><a href="/a">目前的规划</a></p>
+                        </div>
+                        <div class="card-content markdown">
+                            <p>js、ts之类的写久了，让我产生了一种以后一定要当前端工程师的错觉，明明写了两三年的java，c#，现在都没了兴趣，可能我真的适合干前端，可能真的不是错觉，至少现在我喜欢它。</p>
+                            <p>之前也从工作了的学长的闲言碎语里也听说了，现在为了省事大家都在从native app转到web app，已然是一种趋势，native react的主页也说了能做到：learn once，write anywhere。这么看来write once， run anywhere的时代也不远了，我相信自己选择了一个正确的方向，毕竟从上大学开始就一直在技术上追求新的东西。</p>
+                        </div>
+                        <div class="card-action">
+                            <a class="right btn-flat" href="#">more</a>
+                        </div>
                     </div>
-                    <div class="card-action">
-                        <a class="right btn-flat" href="#">more</a>
+                    <div class="card-flat">
+                        <!--style="background: url(card-bg.jpg) 0 45% / cover;"-->
+                        <div class="card-header">
+                            <div style="background: url('card-bg.jpg') 0 45% / cover;" class="header-img"></div>
+                            <p><a href="/a">目前的规划</a></p>
+                        </div>
+                        <div class="card-content markdown">
+                            <p>js、ts之类的写久了，让我产生了一种以后一定要当前端工程师的错觉，明明写了两三年的java，c#，现在都没了兴趣，可能我真的适合干前端，可能真的不是错觉，至少现在我喜欢它。</p>
+                            <p>之前也从工作了的学长的闲言碎语里也听说了，现在为了省事大家都在从native app转到web app，已然是一种趋势，native react的主页也说了能做到：learn once，write anywhere。这么看来write once， run anywhere的时代也不远了，我相信自己选择了一个正确的方向，毕竟从上大学开始就一直在技术上追求新的东西。</p>
+                        </div>
+                        <div class="card-action">
+                            <a class="right btn-flat" href="#">more</a>
+                        </div>
+                    </div>
+                    <div class="card-flat">
+                        <!--style="background: url(card-bg.jpg) 0 45% / cover;"-->
+                        <div class="card-header">
+                            <div style="background: url('card-bg.jpg') 0 45% / cover;" class="header-img"></div>
+                            <p><a href="/a">目前的规划</a></p>
+                        </div>
+                        <div class="card-content markdown">
+                            <p>js、ts之类的写久了，让我产生了一种以后一定要当前端工程师的错觉，明明写了两三年的java，c#，现在都没了兴趣，可能我真的适合干前端，可能真的不是错觉，至少现在我喜欢它。</p>
+                            <p>之前也从工作了的学长的闲言碎语里也听说了，现在为了省事大家都在从native app转到web app，已然是一种趋势，native react的主页也说了能做到：learn once，write anywhere。这么看来write once， run anywhere的时代也不远了，我相信自己选择了一个正确的方向，毕竟从上大学开始就一直在技术上追求新的东西。</p>
+                        </div>
+                        <div class="card-action">
+                            <a class="right btn-flat" href="#">more</a>
+                        </div>
+                    </div>
+                    <div class="card-flat">
+                        <!--style="background: url(card-bg.jpg) 0 45% / cover;"-->
+                        <div class="card-header">
+                            <div style="background: url('card-bg.jpg') 0 45% / cover;" class="header-img"></div>
+                            <p><a href="/a">目前的规划</a></p>
+                        </div>
+                        <div class="card-content markdown">
+                            <p>js、ts之类的写久了，让我产生了一种以后一定要当前端工程师的错觉，明明写了两三年的java，c#，现在都没了兴趣，可能我真的适合干前端，可能真的不是错觉，至少现在我喜欢它。</p>
+                            <p>之前也从工作了的学长的闲言碎语里也听说了，现在为了省事大家都在从native app转到web app，已然是一种趋势，native react的主页也说了能做到：learn once，write anywhere。这么看来write once， run anywhere的时代也不远了，我相信自己选择了一个正确的方向，毕竟从上大学开始就一直在技术上追求新的东西。</p>
+                        </div>
+                        <div class="card-action">
+                            <a class="right btn-flat" href="#">more</a>
+                        </div>
                     </div>
                 </div>
-
             </div>
-        </div>
 
-        <div class="row">
-            <div class="col s24 m12 l6 " style="height: 200px">
-                <div class="loading">
-                    <div class="item-wrapper">
-                        <div class="item"></div>
+            <div class="row" style="display: none">
+                <div class="col s24 m12 l6 " style="height: 30px">
+                    <div class="spinner">
+                        <div class="item-wrapper">
+                            <div class="item"></div>
+                        </div>
+                        <div class="item-wrapper">
+                            <div class="item"></div>
+                        </div>
+                        <div class="item-wrapper">
+                            <div class="item"></div>
+                        </div>
+                        <div class="item-wrapper">
+                            <div class="item"></div>
+                        </div>
                     </div>
-                    <div class="item-wrapper">
-                        <div class="item"></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s24">
+                    <ul class="paginator center">
+                        <li selected><a href="#">1</a></li>
+                        <li disabled><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <div style="display: none">
+
+                <div class="row">
+                    <div class="col s24 m12 l6 " style="height: 100px">
+                        <div class="red fill-parent">s24 m12 l6 red</div>
                     </div>
-                    <div class="item-wrapper">
-                        <div class="item"></div>
+                </div>
+                <div class="row">
+                    <div class="col s24 m12 l6" style="height: 100px">
+                        <div class="red fill-parent">s24 m12 l6 red</div>
                     </div>
-                    <div class="item-wrapper">
-                        <div class="item"></div>
+                    <div class="col l6" style="height: 120px">
+                        <div class="orange fill-parent">l6 orange</div>
+                    </div>
+                    <div class="col s24 m12 l6" style="height: 100px">
+                        <div class="light-blue fill-parent">s24 m12 l6 light-blue</div>
+                    </div>
+                    <div class="col s24 m12 l6" style="height: 100px">
+                        <div class="light-blue fill-parent">s24 m12 l6 light-blue</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s24 m12 l14 clear-float" style="height: 100px">
+                        <div class="red fill-parent">s24 m12 l14 red</div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col s24 m6 l4 push-m18 push-l20">
+                        <div class="orange fill-parent">orange menu</div>
+                    </div>
+                    <div class="col s24 m18 l20 pull-m6 pull-l4">
+                        <div class="orange fill-parent">orange content</div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="row">
-            <div class="col s24">
-                <ul class="pagination center">
-                    <li selected><a href="#">1</a></li>
-                    <li disabled><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                </ul>
+        </div>
+    </main>
+    <footer class="footer-flat">
+        <div class="copyright">
+            <div class="container">
+                <a href="https://angular.io">自豪的使用Angluar2</a>
             </div>
         </div>
-
-
-
-        <div style="display: none">
-
-        <div class="row">
-            <div class="col s24 m12 l6 " style="height: 100px">
-                <div class="red fill-parent">s24 m12 l6 red</div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col s24 m12 l6" style="height: 100px">
-                <div class="red fill-parent">s24 m12 l6 red</div>
-            </div>
-            <div class="col l6" style="height: 120px">
-                <div class="orange fill-parent">l6 orange</div>
-            </div>
-            <div class="col s24 m12 l6" style="height: 100px">
-                <div class="light-blue fill-parent">s24 m12 l6 light-blue</div>
-            </div>
-            <div class="col s24 m12 l6" style="height: 100px">
-                <div class="light-blue fill-parent">s24 m12 l6 light-blue</div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col s24 m12 l14 clear-float" style="height: 100px">
-                <div class="red fill-parent">s24 m12 l14 red</div>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="col s24 m6 l4 push-m18 push-l20">
-                <div class="orange fill-parent">orange menu</div>
-            </div>
-            <div class="col s24 m18 l20 pull-m6 pull-l4">
-                <div class="orange fill-parent">orange content</div>
-            </div>
-        </div>
-        </div>
-    </div>
+    </footer>
 </body>
 
 </html>

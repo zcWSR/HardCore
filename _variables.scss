@@ -68,9 +68,14 @@ $global-font-color: #444;
 // 5.Card 
 // ======================
 $card-header-height: 10rem;
-$card-title-fontsize: 2.5rem;
-$card-content-fontsize: 1rem;
-$card-background: linear-gradient(45deg, color('grey','darken-3') 50%, transparent 50%) no-repeat;
+$card-flat-header-height: 7rem;
+$card-title-font-size: 2.5rem;
+$card-flat-title-font-size: 3rem;
+$card-content-font-size: 1rem;
+$card-flar-content-font-size: 16px;
+$card-header-background: linear-gradient(45deg, color('grey','darken-3') 50%, transparent 50%) no-repeat;
+$card-flat-header-background: linear-gradient(135deg,  transparent 50%, color('grey','darken-3') 50%) no-repeat;
+$card-info-font-size: 0.8rem;
 
 
 // 6.Button
@@ -92,7 +97,7 @@ linear-gradient(45deg, color('grey', 'lighten-1') 50%, transparent 50%) no-repea
 linear-gradient(45deg, transparent 100%, transparent 100%) no-repeat;
 $button-font-color-flat: color('light-blue', 'darken-3');
 
-// 6.loading
+// 6.Loading
 // ======================
 $loading-item-wrapper-width: 1.5rem;
 $loading-width: $loading-item-wrapper-width * 2;
@@ -101,18 +106,23 @@ $loading-item-wrapper-padding: $loading-item-wrapper-width * 0.1;
 $loading-animation-time: 1s;
 $loading-item-color: $global-font-color;
 
-// 7.index
+// 7.Index
 // ======================
 $index-font-color: #444;
 $index-font-color-hover: #777;
 $index-font-size: .75rem;
 
-// 8.pagination
+// 8.Paginator
 // ======================
-$pagination-height: 1.8rem;
-$pagination-font-size: 1.3rem;
-$pagination-font-color: $global-font-color;
-$pagination-selected-background: color('light-blue', 'darken-3');
+$paginator-height: 1.8rem;
+$paginator-font-size: 1.2rem;
+$paginator-font-color: $global-font-color;
+$paginator-selected-background: color('light-blue', 'darken-3');
+
+// 9.Footer
+// ======================
+$footer-copyright-height: 3rem;
+$footer-copyright-background-color: color('light-blue', 'darken-3');
 
 
 

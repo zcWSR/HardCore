@@ -1,10 +1,4 @@
 .index {
-    position: fixed;
-    &.affix {
-        right: 10px;
-        top: 100px;
-    }
-
     & > ul {
         display: block;
         list-style: none;

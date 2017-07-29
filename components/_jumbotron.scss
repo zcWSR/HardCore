@@ -1,0 +1,28 @@
+// 巨幅
+.jumbotron {
+    position: relative;
+    background: transparent;
+    position: relative;
+    height: $ultra-header-height;
+    padding: 2rem 1rem;
+    overflow: hidden;
+    transition: height .3s ease;
+
+    .jumbotron-background {
+        position: fixed;
+        height: inherit;
+        width: 100%;
+        left: 0; top: 0;
+        z-index: -1;
+        transition: filter,margin ease-out 1s; 
+        // img {
+        //     height: 100%;
+        //     width: auto;
+        //     margin: 0;
+        // }
+        &.blur {
+            filter: blur(50px);
+            margin: -50px;
+        }
+    }
+}

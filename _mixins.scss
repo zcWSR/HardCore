@@ -101,6 +101,7 @@
 
         a {
             float: left;
+            color: $header-content-color;
         }
 
         a:visited {
@@ -144,6 +145,7 @@
 
             a {
                 line-height: $header-height;
+                color: $header-content-color;
             }
             
             a:visited {
