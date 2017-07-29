@@ -7,7 +7,7 @@ scss编写，部分借鉴自bootstrap v4与materialize。
 
 采用24列的栅格系统，可适配小、中、大、超大（s m l u）四种屏幕尺寸。
 
-本着动态及动画部分尽可能使用css实现，所以本框架不包含js部分，需结合js前端框架使用，angular2部分实现：[我的博客](http://zcwsr.com)
+本着动态及动画部分尽可能使用css实现的原则，所以本框架不包含js部分，需结合js前端框架使用，angular2部分实现：[我的博客](http://zcwsr.com)
 
 组件编写中...
 
