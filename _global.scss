@@ -1,7 +1,7 @@
-
 html {
     box-sizing: border-box;
     color: $global-font-color;
+    @include recommend-font-family();
 }
 
 body,

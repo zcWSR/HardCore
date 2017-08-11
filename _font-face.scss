@@ -1,0 +1,354 @@
+$unicode-range-EN: U+0000-00FF,
+U+0131,
+U+0152-0153,
+U+02C6,
+U+02DA,
+U+02DC,
+U+2000-206F,
+U+2074,
+U+20AC,
+U+2212,
+U+2215,
+U+E0FF,
+U+EFFD,
+U+F000;
+$unicode-range-CN: U+4E00-62FF,
+U+6300-77FF,
+U+7800-8CFF,
+U+8D00-9FCC,
+U+3400-4DB5,
+U+20000-215FF,
+U+21600-230FF,
+U+23100-245FF,
+U+24600-260FF,
+U+26100-275FF,
+U+27600-290FF,
+U+29100-2A6DF,
+U+2A700-2B734,
+U+2B740-2B81D;
+$unicode-range-JP: U+3000-303F,
+U+3040-309F,
+U+30A0-30FF,
+U+FF00-FFEF,
+U+4E00-9FAF;
+// Chinese
+// Noto Sans SC
+@font-face {
+    font-family: 'Noto Sans SC';
+    font-style: normal;
+    font-weight: 100;
+    src: url('//fonts.gstatic.com/ea/notosanssc/v1/NotoSansSC-Thin.woff2') format('woff2'), url('//fonts.gstatic.com/ea/notosanssc/v1/NotoSansSC-Thin.woff') format('woff'), url('//fonts.gstatic.com/ea/notosanssc/v1/NotoSansSC-Thin.otf') format('opentype');
+    unicode-range: $unicode-range-CN;
+}
+
+@font-face {
+    font-family: 'Noto Sans SC';
+    font-style: normal;
+    font-weight: 300;
+    src: url('//fonts.gstatic.com/ea/notosanssc/v1/NotoSansSC-Light.woff2') format('woff2'), url('//fonts.gstatic.com/ea/notosanssc/v1/NotoSansSC-Light.woff') format('woff'), url('//fonts.gstatic.com/ea/notosanssc/v1/NotoSansSC-Light.otf') format('opentype');
+    unicode-range: $unicode-range-CN;
+}
+
+@font-face {
+    font-family: 'Noto Sans SC';
+    font-style: normal;
+    font-weight: 400;
+    src: url('//fonts.gstatic.com/ea/notosanssc/v1/NotoSansSC-Regular.woff2') format('woff2'), url('//fonts.gstatic.com/ea/notosanssc/v1/NotoSansSC-Regular.woff') format('woff'), url('//fonts.gstatic.com/ea/notosanssc/v1/NotoSansSC-Regular.otf') format('opentype');
+    unicode-range: $unicode-range-CN;
+}
+
+@font-face {
+    font-family: 'Noto Sans SC';
+    font-style: normal;
+    font-weight: 500;
+    src: url('//fonts.gstatic.com/ea/notosanssc/v1/NotoSansSC-Medium.woff2') format('woff2'), url('//fonts.gstatic.com/ea/notosanssc/v1/NotoSansSC-Medium.woff') format('woff'), url('//fonts.gstatic.com/ea/notosanssc/v1/NotoSansSC-Medium.otf') format('opentype');
+    unicode-range: $unicode-range-CN;
+}
+
+@font-face {
+    font-family: 'Noto Sans SC';
+    font-style: normal;
+    font-weight: 700;
+    src: url('//fonts.gstatic.com/ea/notosanssc/v1/NotoSansSC-Bold.woff2') format('woff2'), url('//fonts.gstatic.com/ea/notosanssc/v1/NotoSansSC-Bold.woff') format('woff'), url('//fonts.gstatic.com/ea/notosanssc/v1/NotoSansSC-Bold.otf') format('opentype');
+    unicode-range: $unicode-range-CN;
+}
+
+@font-face {
+    font-family: 'Noto Sans SC';
+    font-style: normal;
+    font-weight: 900;
+    src: url('//fonts.gstatic.com/ea/notosanssc/v1/NotoSansSC-Black.woff2') format('woff2'), url('//fonts.gstatic.com/ea/notosanssc/v1/NotoSansSC-Black.woff') format('woff'), url('//fonts.gstatic.com/ea/notosanssc/v1/NotoSansSC-Black.otf') format('opentype');
+    unicode-range: $unicode-range-CN;
+}
+
+// PingFangSC
+@font-face {
+    font-family: 'PingFangSC';
+    font-style: normal;
+    font-weight: 100;
+    src: local('PingFangSC-Ultralight');
+    unicode-range: $unicode-range-CN;
+}
+
+@font-face {
+    font-family: 'PingFangSC';
+    font-style: normal;
+    font-weight: 200;
+    src: local('PingFangSC-Thin');
+    unicode-range: $unicode-range-CN;
+}
+
+@font-face {
+    font-family: 'PingFangSC';
+    font-style: normal;
+    font-weight: 300;
+    src: local('PingFangSC-Light');
+    unicode-range: $unicode-range-CN;
+}
+
+@font-face {
+    font-family: 'PingFangSC';
+    font-style: normal;
+    font-weight: 400;
+    src: local('PingFangSC-Regular');
+    unicode-range: $unicode-range-CN;
+}
+
+@font-face {
+    font-family: 'PingFangSC';
+    font-style: normal;
+    font-weight: 500;
+    src: local('PingFangSC-Medium');
+    unicode-range: $unicode-range-CN;
+}
+
+@font-face {
+    font-family: 'PingFangSC';
+    font-style: normal;
+    font-weight: 700;
+    src: local('PingFangSC-Semibold');
+    unicode-range: $unicode-range-CN;
+}
+
+// Microsoft YaHei UI
+@font-face {
+    font-family: 'Microsoft YaHei UI';
+    font-style: normal;
+    src: local('Microsoft YaHei UI');
+    unicode-range: $unicode-range-CN;
+}
+
+// Japanese
+// Noto Sans Japanese
+@font-face {
+    font-family: 'Noto Sans Japanese';
+    font-style: normal;
+    font-weight: 100;
+    src: url('//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Thin.woff2') format('woff2'), url('//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Thin.woff') format('woff'), url('//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Thin.otf') format('opentype');
+    unicode-range: $unicode-range-JP;
+}
+
+@font-face {
+    font-family: 'Noto Sans Japanese';
+    font-style: normal;
+    font-weight: 200;
+    src: url('//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Light.woff2') format('woff2'), url('//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Light.woff') format('woff'), url('//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Light.otf') format('opentype');
+    unicode-range: $unicode-range-JP;
+}
+
+@font-face {
+    font-family: 'Noto Sans Japanese';
+    font-style: normal;
+    font-weight: 300;
+    src: url('//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-DemiLight.woff2') format('woff2'), url('//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-DemiLight.woff') format('woff'), url('//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-DemiLight.otf') format('opentype');
+    unicode-range: $unicode-range-JP;
+}
+
+@font-face {
+    font-family: 'Noto Sans Japanese';
+    font-style: normal;
+    font-weight: 400;
+    src: url('//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Regular.woff2') format('woff2'), url('//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Regular.woff') format('woff'), url('//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Regular.otf') format('opentype');
+    unicode-range: $unicode-range-JP;
+}
+
+@font-face {
+    font-family: 'Noto Sans Japanese';
+    font-style: normal;
+    font-weight: 500;
+    src: url('//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Medium.woff2') format('woff2'), url('//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Medium.woff') format('woff'), url('//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Medium.otf') format('opentype');
+    unicode-range: $unicode-range-JP;
+}
+
+@font-face {
+    font-family: 'Noto Sans Japanese';
+    font-style: normal;
+    font-weight: 700;
+    src: url('//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Bold.woff2') format('woff2'), url('//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Bold.woff') format('woff'), url('//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Bold.otf') format('opentype');
+    unicode-range: $unicode-range-JP;
+}
+
+@font-face {
+    font-family: 'Noto Sans Japanese';
+    font-style: normal;
+    font-weight: 900;
+    src: url('//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Black.woff2') format('woff2'), url('//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Black.woff') format('woff'), url('//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Black.otf') format('opentype');
+    unicode-range: $unicode-range-JP;
+}
+
+// HiraginoSan
+@font-face {
+    font-family: 'HiraginoSans';
+    font-style: normal;
+    font-weight: 100;
+    src: local('HiraginoSans-W0');
+    unicode-range: $unicode-range-JP;
+}
+
+@font-face {
+    font-family: 'HiraginoSans';
+    font-style: normal;
+    font-weight: 200;
+    src: local('HiraginoSans-W1');
+    unicode-range: $unicode-range-JP;
+}
+
+@font-face {
+    font-family: 'HiraginoSans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('HiraginoSans-W2');
+    unicode-range: $unicode-range-JP;
+}
+
+@font-face {
+    font-family: 'HiraginoSans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('HiraginoSans-W3');
+    unicode-range: $unicode-range-JP;
+}
+
+@font-face {
+    font-family: 'HiraginoSans';
+    font-style: normal;
+    font-weight: 500;
+    src: local('HiraginoSans-W4');
+    unicode-range: $unicode-range-JP;
+}
+
+@font-face {
+    font-family: 'HiraginoSans';
+    font-style: normal;
+    font-weight: 600;
+    src: local('HiraginoSans-W5');
+    unicode-range: $unicode-range-JP;
+}
+
+@font-face {
+    font-family: 'HiraginoSans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('HiraginoSans-W6');
+    unicode-range: $unicode-range-JP;
+}
+
+@font-face {
+    font-family: 'HiraginoSans';
+    font-style: normal;
+    font-weight: 800;
+    src: local('HiraginoSans-W7');
+    unicode-range: $unicode-range-JP;
+}
+
+@font-face {
+    font-family: 'HiraginoSans';
+    font-style: normal;
+    font-weight: 900;
+    src: local('HiraginoSans-W8');
+    unicode-range: $unicode-range-JP;
+}
+
+// English
+// Futura
+@font-face {
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Futura-Medium');
+    unicode-range: $unicode-range-EN;
+}
+
+@font-face {
+    font-family: 'Futura';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Futura-MediumItalic');
+    unicode-range: $unicode-range-EN;
+}
+
+@font-face {
+    font-family: 'Futura';
+    font-style: italic;
+    font-weight: 700;
+    src: local('Futura-Bold');
+    unicode-range: $unicode-range-EN;
+}
+
+// Helvetica Neue
+@font-face {
+  font-family   : 'Helvetica Neue';
+  font-style    : normal;
+  font-weight   : 100;
+  src           : local('HelveticaNeue-UltraLight');
+  unicode-range : $unicode-range-EN;
+}
+
+@font-face {
+  font-family   : 'Helvetica Neue';
+  font-style    : normal;
+  font-weight   : 200;
+  src           : local('HelveticaNeue-Thin');
+  unicode-range : $unicode-range-EN;
+}
+
+@font-face {
+  font-family   : 'Helvetica Neue';
+  font-style    : normal;
+  font-weight   : 300;
+  src           : local('HelveticaNeue-Light');
+  unicode-range : $unicode-range-EN;
+}
+
+@font-face {
+  font-family   : 'Helvetica Neue';
+  font-style    : normal;
+  font-weight   : 400;
+  src           : local('HelveticaNeue');
+  unicode-range : $unicode-range-EN;
+}
+
+@font-face {
+  font-family   : 'Helvetica Neue';
+  font-style    : normal;
+  font-weight   : 500;
+  src           : local('HelveticaNeue-Medium');
+  unicode-range : $unicode-range-EN;
+}
+
+@font-face {
+  font-family   : 'Helvetica Neue';
+  font-style    : normal;
+  font-weight   : 700;
+  src           : local('HelveticaNeue-Bold');
+  unicode-range : $unicode-range-EN;
+}
+
+
+.recommend-font-family {
+    font-family: 'PingFangSC', 'Helvetica Neue', 'Futura', 'Noto Sans Japanese', 'Noto Sans SC', 'HiraginoSans', 'Microsoft YaHei UI' !important;   
+}
+
+@mixin recommend-font-family {
+    font-family: 'PingFangSC', 'Helvetica Neue', 'Futura', 'Noto Sans Japanese', 'Noto Sans SC', 'HiraginoSans', 'Microsoft YaHei UI' !important;
+}
