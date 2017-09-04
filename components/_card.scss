@@ -105,22 +105,7 @@
         .header-img {
             background-position: 0 50%;
             background-size: cover;
-            background: $card-header-background;
-            filter: opacity(.8);
-
-            &::before {
-                content: '';
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                width: 50%;
-                height: 100%;
-                background-image: linear-gradient(to right, rgba(255, 255, 255, 1), transparent);
-            }
-
-            &:hover {
-                filter: opacity(1);
-            }
+            background: transparent;
         }
 
         p {

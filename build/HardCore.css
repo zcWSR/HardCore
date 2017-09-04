@@ -3007,6 +3007,15 @@ header, .header {
     .jumbotron .jumbotron-background.blur {
       filter: blur(50px);
       margin: -50px; }
+    .jumbotron .jumbotron-background.grey::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: black;
+      opacity: .3; }
 
 .card,
 .card-flat {
@@ -3081,18 +3090,7 @@ header, .header {
   .card-flat .card-header .header-img {
     background-position: 0 50%;
     background-size: cover;
-    background: linear-gradient(45deg, #424242 50%, transparent 50%) no-repeat;
-    filter: opacity(0.8); }
-    .card-flat .card-header .header-img::before {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 50%;
-      height: 100%;
-      background-image: linear-gradient(to right, white, transparent); }
-    .card-flat .card-header .header-img:hover {
-      filter: opacity(1); }
+    background: transparent; }
   .card-flat .card-header p {
     position: relative;
     bottom: 0;
