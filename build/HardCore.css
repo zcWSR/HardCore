@@ -1643,268 +1643,268 @@
   font-style: normal;
   font-weight: 100;
   src: url("//fonts.gstatic.com/ea/notosanssc/v1/NotoSansSC-Thin.woff2") format("woff2"), url("//fonts.gstatic.com/ea/notosanssc/v1/NotoSansSC-Thin.woff") format("woff"), url("//fonts.gstatic.com/ea/notosanssc/v1/NotoSansSC-Thin.otf") format("opentype");
-  unicode-range: U+4E00-62FF, U+6300-77FF, U+7800-8CFF, U+8D00-9FCC, U+3400-4DB5, U+20000-215FF, U+21600-230FF, U+23100-245FF, U+24600-260FF, U+26100-275FF, U+27600-290FF, U+29100-2A6DF, U+2A700-2B734, U+2B740-2B81D; }
+  unicode-range: U+4E00-9FBF, U+2E80-2EFF, U+3000-303F, U+31C0-31EF, U+3200-32FF, U+3300-33FF, U+3400-4DBF, U+4E00-9FBF, U+F900-FAFF, U+FE30-FE4F, U+20000-2A6D6, U+2F800-2FA1F; }
 
 @font-face {
   font-family: 'Noto Sans SC';
   font-style: normal;
   font-weight: 300;
   src: url("//fonts.gstatic.com/ea/notosanssc/v1/NotoSansSC-Light.woff2") format("woff2"), url("//fonts.gstatic.com/ea/notosanssc/v1/NotoSansSC-Light.woff") format("woff"), url("//fonts.gstatic.com/ea/notosanssc/v1/NotoSansSC-Light.otf") format("opentype");
-  unicode-range: U+4E00-62FF, U+6300-77FF, U+7800-8CFF, U+8D00-9FCC, U+3400-4DB5, U+20000-215FF, U+21600-230FF, U+23100-245FF, U+24600-260FF, U+26100-275FF, U+27600-290FF, U+29100-2A6DF, U+2A700-2B734, U+2B740-2B81D; }
+  unicode-range: U+4E00-9FBF, U+2E80-2EFF, U+3000-303F, U+31C0-31EF, U+3200-32FF, U+3300-33FF, U+3400-4DBF, U+4E00-9FBF, U+F900-FAFF, U+FE30-FE4F, U+20000-2A6D6, U+2F800-2FA1F; }
 
 @font-face {
   font-family: 'Noto Sans SC';
   font-style: normal;
   font-weight: 400;
   src: url("//fonts.gstatic.com/ea/notosanssc/v1/NotoSansSC-Regular.woff2") format("woff2"), url("//fonts.gstatic.com/ea/notosanssc/v1/NotoSansSC-Regular.woff") format("woff"), url("//fonts.gstatic.com/ea/notosanssc/v1/NotoSansSC-Regular.otf") format("opentype");
-  unicode-range: U+4E00-62FF, U+6300-77FF, U+7800-8CFF, U+8D00-9FCC, U+3400-4DB5, U+20000-215FF, U+21600-230FF, U+23100-245FF, U+24600-260FF, U+26100-275FF, U+27600-290FF, U+29100-2A6DF, U+2A700-2B734, U+2B740-2B81D; }
+  unicode-range: U+4E00-9FBF, U+2E80-2EFF, U+3000-303F, U+31C0-31EF, U+3200-32FF, U+3300-33FF, U+3400-4DBF, U+4E00-9FBF, U+F900-FAFF, U+FE30-FE4F, U+20000-2A6D6, U+2F800-2FA1F; }
 
 @font-face {
   font-family: 'Noto Sans SC';
   font-style: normal;
   font-weight: 500;
   src: url("//fonts.gstatic.com/ea/notosanssc/v1/NotoSansSC-Medium.woff2") format("woff2"), url("//fonts.gstatic.com/ea/notosanssc/v1/NotoSansSC-Medium.woff") format("woff"), url("//fonts.gstatic.com/ea/notosanssc/v1/NotoSansSC-Medium.otf") format("opentype");
-  unicode-range: U+4E00-62FF, U+6300-77FF, U+7800-8CFF, U+8D00-9FCC, U+3400-4DB5, U+20000-215FF, U+21600-230FF, U+23100-245FF, U+24600-260FF, U+26100-275FF, U+27600-290FF, U+29100-2A6DF, U+2A700-2B734, U+2B740-2B81D; }
+  unicode-range: U+4E00-9FBF, U+2E80-2EFF, U+3000-303F, U+31C0-31EF, U+3200-32FF, U+3300-33FF, U+3400-4DBF, U+4E00-9FBF, U+F900-FAFF, U+FE30-FE4F, U+20000-2A6D6, U+2F800-2FA1F; }
 
 @font-face {
   font-family: 'Noto Sans SC';
   font-style: normal;
   font-weight: 700;
   src: url("//fonts.gstatic.com/ea/notosanssc/v1/NotoSansSC-Bold.woff2") format("woff2"), url("//fonts.gstatic.com/ea/notosanssc/v1/NotoSansSC-Bold.woff") format("woff"), url("//fonts.gstatic.com/ea/notosanssc/v1/NotoSansSC-Bold.otf") format("opentype");
-  unicode-range: U+4E00-62FF, U+6300-77FF, U+7800-8CFF, U+8D00-9FCC, U+3400-4DB5, U+20000-215FF, U+21600-230FF, U+23100-245FF, U+24600-260FF, U+26100-275FF, U+27600-290FF, U+29100-2A6DF, U+2A700-2B734, U+2B740-2B81D; }
+  unicode-range: U+4E00-9FBF, U+2E80-2EFF, U+3000-303F, U+31C0-31EF, U+3200-32FF, U+3300-33FF, U+3400-4DBF, U+4E00-9FBF, U+F900-FAFF, U+FE30-FE4F, U+20000-2A6D6, U+2F800-2FA1F; }
 
 @font-face {
   font-family: 'Noto Sans SC';
   font-style: normal;
   font-weight: 900;
   src: url("//fonts.gstatic.com/ea/notosanssc/v1/NotoSansSC-Black.woff2") format("woff2"), url("//fonts.gstatic.com/ea/notosanssc/v1/NotoSansSC-Black.woff") format("woff"), url("//fonts.gstatic.com/ea/notosanssc/v1/NotoSansSC-Black.otf") format("opentype");
-  unicode-range: U+4E00-62FF, U+6300-77FF, U+7800-8CFF, U+8D00-9FCC, U+3400-4DB5, U+20000-215FF, U+21600-230FF, U+23100-245FF, U+24600-260FF, U+26100-275FF, U+27600-290FF, U+29100-2A6DF, U+2A700-2B734, U+2B740-2B81D; }
+  unicode-range: U+4E00-9FBF, U+2E80-2EFF, U+3000-303F, U+31C0-31EF, U+3200-32FF, U+3300-33FF, U+3400-4DBF, U+4E00-9FBF, U+F900-FAFF, U+FE30-FE4F, U+20000-2A6D6, U+2F800-2FA1F; }
 
 @font-face {
   font-family: 'PingFangSC';
   font-style: normal;
   font-weight: 100;
   src: local("PingFangSC-Ultralight");
-  unicode-range: U+4E00-62FF, U+6300-77FF, U+7800-8CFF, U+8D00-9FCC, U+3400-4DB5, U+20000-215FF, U+21600-230FF, U+23100-245FF, U+24600-260FF, U+26100-275FF, U+27600-290FF, U+29100-2A6DF, U+2A700-2B734, U+2B740-2B81D; }
+  unicode-range: U+4E00-9FBF, U+2E80-2EFF, U+3000-303F, U+31C0-31EF, U+3200-32FF, U+3300-33FF, U+3400-4DBF, U+4E00-9FBF, U+F900-FAFF, U+FE30-FE4F, U+20000-2A6D6, U+2F800-2FA1F; }
 
 @font-face {
   font-family: 'PingFangSC';
   font-style: normal;
   font-weight: 200;
   src: local("PingFangSC-Thin");
-  unicode-range: U+4E00-62FF, U+6300-77FF, U+7800-8CFF, U+8D00-9FCC, U+3400-4DB5, U+20000-215FF, U+21600-230FF, U+23100-245FF, U+24600-260FF, U+26100-275FF, U+27600-290FF, U+29100-2A6DF, U+2A700-2B734, U+2B740-2B81D; }
+  unicode-range: U+4E00-9FBF, U+2E80-2EFF, U+3000-303F, U+31C0-31EF, U+3200-32FF, U+3300-33FF, U+3400-4DBF, U+4E00-9FBF, U+F900-FAFF, U+FE30-FE4F, U+20000-2A6D6, U+2F800-2FA1F; }
 
 @font-face {
   font-family: 'PingFangSC';
   font-style: normal;
   font-weight: 300;
   src: local("PingFangSC-Light");
-  unicode-range: U+4E00-62FF, U+6300-77FF, U+7800-8CFF, U+8D00-9FCC, U+3400-4DB5, U+20000-215FF, U+21600-230FF, U+23100-245FF, U+24600-260FF, U+26100-275FF, U+27600-290FF, U+29100-2A6DF, U+2A700-2B734, U+2B740-2B81D; }
+  unicode-range: U+4E00-9FBF, U+2E80-2EFF, U+3000-303F, U+31C0-31EF, U+3200-32FF, U+3300-33FF, U+3400-4DBF, U+4E00-9FBF, U+F900-FAFF, U+FE30-FE4F, U+20000-2A6D6, U+2F800-2FA1F; }
 
 @font-face {
   font-family: 'PingFangSC';
   font-style: normal;
   font-weight: 400;
   src: local("PingFangSC-Regular");
-  unicode-range: U+4E00-62FF, U+6300-77FF, U+7800-8CFF, U+8D00-9FCC, U+3400-4DB5, U+20000-215FF, U+21600-230FF, U+23100-245FF, U+24600-260FF, U+26100-275FF, U+27600-290FF, U+29100-2A6DF, U+2A700-2B734, U+2B740-2B81D; }
+  unicode-range: U+4E00-9FBF, U+2E80-2EFF, U+3000-303F, U+31C0-31EF, U+3200-32FF, U+3300-33FF, U+3400-4DBF, U+4E00-9FBF, U+F900-FAFF, U+FE30-FE4F, U+20000-2A6D6, U+2F800-2FA1F; }
 
 @font-face {
   font-family: 'PingFangSC';
   font-style: normal;
   font-weight: 500;
   src: local("PingFangSC-Medium");
-  unicode-range: U+4E00-62FF, U+6300-77FF, U+7800-8CFF, U+8D00-9FCC, U+3400-4DB5, U+20000-215FF, U+21600-230FF, U+23100-245FF, U+24600-260FF, U+26100-275FF, U+27600-290FF, U+29100-2A6DF, U+2A700-2B734, U+2B740-2B81D; }
+  unicode-range: U+4E00-9FBF, U+2E80-2EFF, U+3000-303F, U+31C0-31EF, U+3200-32FF, U+3300-33FF, U+3400-4DBF, U+4E00-9FBF, U+F900-FAFF, U+FE30-FE4F, U+20000-2A6D6, U+2F800-2FA1F; }
 
 @font-face {
   font-family: 'PingFangSC';
   font-style: normal;
   font-weight: 700;
   src: local("PingFangSC-Semibold");
-  unicode-range: U+4E00-62FF, U+6300-77FF, U+7800-8CFF, U+8D00-9FCC, U+3400-4DB5, U+20000-215FF, U+21600-230FF, U+23100-245FF, U+24600-260FF, U+26100-275FF, U+27600-290FF, U+29100-2A6DF, U+2A700-2B734, U+2B740-2B81D; }
+  unicode-range: U+4E00-9FBF, U+2E80-2EFF, U+3000-303F, U+31C0-31EF, U+3200-32FF, U+3300-33FF, U+3400-4DBF, U+4E00-9FBF, U+F900-FAFF, U+FE30-FE4F, U+20000-2A6D6, U+2F800-2FA1F; }
 
 @font-face {
   font-family: 'Microsoft YaHei UI';
   font-style: normal;
-  src: local("Microsoft YaHei UI");
-  unicode-range: U+4E00-62FF, U+6300-77FF, U+7800-8CFF, U+8D00-9FCC, U+3400-4DB5, U+20000-215FF, U+21600-230FF, U+23100-245FF, U+24600-260FF, U+26100-275FF, U+27600-290FF, U+29100-2A6DF, U+2A700-2B734, U+2B740-2B81D; }
+  src: local("Microsoft YaHei UI"); }
 
 @font-face {
   font-family: 'Noto Sans Japanese';
   font-style: normal;
   font-weight: 100;
   src: url("//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Thin.woff2") format("woff2"), url("//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Thin.woff") format("woff"), url("//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Thin.otf") format("opentype");
-  unicode-range: U+3000-303F, U+3040-309F, U+30A0-30FF, U+FF00-FFEF, U+4E00-9FAF; }
+  unicode-range: U+3040-30FF, U+31F0-31FF, U+FF00-FFEF; }
 
 @font-face {
   font-family: 'Noto Sans Japanese';
   font-style: normal;
   font-weight: 200;
   src: url("//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Light.woff2") format("woff2"), url("//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Light.woff") format("woff"), url("//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Light.otf") format("opentype");
-  unicode-range: U+3000-303F, U+3040-309F, U+30A0-30FF, U+FF00-FFEF, U+4E00-9FAF; }
+  unicode-range: U+3040-30FF, U+31F0-31FF, U+FF00-FFEF; }
 
 @font-face {
   font-family: 'Noto Sans Japanese';
   font-style: normal;
   font-weight: 300;
   src: url("//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-DemiLight.woff2") format("woff2"), url("//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-DemiLight.woff") format("woff"), url("//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-DemiLight.otf") format("opentype");
-  unicode-range: U+3000-303F, U+3040-309F, U+30A0-30FF, U+FF00-FFEF, U+4E00-9FAF; }
+  unicode-range: U+3040-30FF, U+31F0-31FF, U+FF00-FFEF; }
 
 @font-face {
   font-family: 'Noto Sans Japanese';
   font-style: normal;
   font-weight: 400;
   src: url("//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Regular.woff2") format("woff2"), url("//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Regular.woff") format("woff"), url("//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Regular.otf") format("opentype");
-  unicode-range: U+3000-303F, U+3040-309F, U+30A0-30FF, U+FF00-FFEF, U+4E00-9FAF; }
+  unicode-range: U+3040-30FF, U+31F0-31FF, U+FF00-FFEF; }
 
 @font-face {
   font-family: 'Noto Sans Japanese';
   font-style: normal;
   font-weight: 500;
   src: url("//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Medium.woff2") format("woff2"), url("//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Medium.woff") format("woff"), url("//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Medium.otf") format("opentype");
-  unicode-range: U+3000-303F, U+3040-309F, U+30A0-30FF, U+FF00-FFEF, U+4E00-9FAF; }
+  unicode-range: U+3040-30FF, U+31F0-31FF, U+FF00-FFEF; }
 
 @font-face {
   font-family: 'Noto Sans Japanese';
   font-style: normal;
   font-weight: 700;
   src: url("//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Bold.woff2") format("woff2"), url("//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Bold.woff") format("woff"), url("//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Bold.otf") format("opentype");
-  unicode-range: U+3000-303F, U+3040-309F, U+30A0-30FF, U+FF00-FFEF, U+4E00-9FAF; }
+  unicode-range: U+3040-30FF, U+31F0-31FF, U+FF00-FFEF; }
 
 @font-face {
   font-family: 'Noto Sans Japanese';
   font-style: normal;
   font-weight: 900;
   src: url("//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Black.woff2") format("woff2"), url("//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Black.woff") format("woff"), url("//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Black.otf") format("opentype");
-  unicode-range: U+3000-303F, U+3040-309F, U+30A0-30FF, U+FF00-FFEF, U+4E00-9FAF; }
+  unicode-range: U+3040-30FF, U+31F0-31FF, U+FF00-FFEF; }
 
 @font-face {
   font-family: 'HiraginoSans';
   font-style: normal;
   font-weight: 100;
   src: local("HiraginoSans-W0");
-  unicode-range: U+3000-303F, U+3040-309F, U+30A0-30FF, U+FF00-FFEF, U+4E00-9FAF; }
+  unicode-range: U+3040-30FF, U+31F0-31FF, U+FF00-FFEF; }
 
 @font-face {
   font-family: 'HiraginoSans';
   font-style: normal;
   font-weight: 200;
   src: local("HiraginoSans-W1");
-  unicode-range: U+3000-303F, U+3040-309F, U+30A0-30FF, U+FF00-FFEF, U+4E00-9FAF; }
+  unicode-range: U+3040-30FF, U+31F0-31FF, U+FF00-FFEF; }
 
 @font-face {
   font-family: 'HiraginoSans';
   font-style: normal;
   font-weight: 300;
   src: local("HiraginoSans-W2");
-  unicode-range: U+3000-303F, U+3040-309F, U+30A0-30FF, U+FF00-FFEF, U+4E00-9FAF; }
+  unicode-range: U+3040-30FF, U+31F0-31FF, U+FF00-FFEF; }
 
 @font-face {
   font-family: 'HiraginoSans';
   font-style: normal;
   font-weight: 400;
   src: local("HiraginoSans-W3");
-  unicode-range: U+3000-303F, U+3040-309F, U+30A0-30FF, U+FF00-FFEF, U+4E00-9FAF; }
+  unicode-range: U+3040-30FF, U+31F0-31FF, U+FF00-FFEF; }
 
 @font-face {
   font-family: 'HiraginoSans';
   font-style: normal;
   font-weight: 500;
   src: local("HiraginoSans-W4");
-  unicode-range: U+3000-303F, U+3040-309F, U+30A0-30FF, U+FF00-FFEF, U+4E00-9FAF; }
+  unicode-range: U+3040-30FF, U+31F0-31FF, U+FF00-FFEF; }
 
 @font-face {
   font-family: 'HiraginoSans';
   font-style: normal;
   font-weight: 600;
   src: local("HiraginoSans-W5");
-  unicode-range: U+3000-303F, U+3040-309F, U+30A0-30FF, U+FF00-FFEF, U+4E00-9FAF; }
+  unicode-range: U+3040-30FF, U+31F0-31FF, U+FF00-FFEF; }
 
 @font-face {
   font-family: 'HiraginoSans';
   font-style: normal;
   font-weight: 700;
   src: local("HiraginoSans-W6");
-  unicode-range: U+3000-303F, U+3040-309F, U+30A0-30FF, U+FF00-FFEF, U+4E00-9FAF; }
+  unicode-range: U+3040-30FF, U+31F0-31FF, U+FF00-FFEF; }
 
 @font-face {
   font-family: 'HiraginoSans';
   font-style: normal;
   font-weight: 800;
   src: local("HiraginoSans-W7");
-  unicode-range: U+3000-303F, U+3040-309F, U+30A0-30FF, U+FF00-FFEF, U+4E00-9FAF; }
+  unicode-range: U+3040-30FF, U+31F0-31FF, U+FF00-FFEF; }
 
 @font-face {
   font-family: 'HiraginoSans';
   font-style: normal;
   font-weight: 900;
   src: local("HiraginoSans-W8");
-  unicode-range: U+3000-303F, U+3040-309F, U+30A0-30FF, U+FF00-FFEF, U+4E00-9FAF; }
+  unicode-range: U+3040-30FF, U+31F0-31FF, U+FF00-FFEF; }
 
 @font-face {
   font-family: 'Futura';
   font-style: normal;
   font-weight: 400;
   src: local("Futura-Medium");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+  unicode-range: U+0000-007F, U+0080-00FF, U+0100-017F, U+0180-024F, U+1E00-1EFF, U+2C60-2C7F, U+2000-206F, U+A720-A7FF; }
 
 @font-face {
   font-family: 'Futura';
   font-style: italic;
   font-weight: 400;
   src: local("Futura-MediumItalic");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+  unicode-range: U+0000-007F, U+0080-00FF, U+0100-017F, U+0180-024F, U+1E00-1EFF, U+2C60-2C7F, U+2000-206F, U+A720-A7FF; }
 
 @font-face {
   font-family: 'Futura';
   font-style: italic;
   font-weight: 700;
   src: local("Futura-Bold");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+  unicode-range: U+0000-007F, U+0080-00FF, U+0100-017F, U+0180-024F, U+1E00-1EFF, U+2C60-2C7F, U+2000-206F, U+A720-A7FF; }
 
 @font-face {
   font-family: 'Helvetica Neue';
   font-style: normal;
   font-weight: 100;
   src: local("HelveticaNeue-UltraLight");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+  unicode-range: U+0000-007F, U+0080-00FF, U+0100-017F, U+0180-024F, U+1E00-1EFF, U+2C60-2C7F, U+2000-206F, U+A720-A7FF; }
 
 @font-face {
   font-family: 'Helvetica Neue';
   font-style: normal;
   font-weight: 200;
   src: local("HelveticaNeue-Thin");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+  unicode-range: U+0000-007F, U+0080-00FF, U+0100-017F, U+0180-024F, U+1E00-1EFF, U+2C60-2C7F, U+2000-206F, U+A720-A7FF; }
 
 @font-face {
   font-family: 'Helvetica Neue';
   font-style: normal;
   font-weight: 300;
   src: local("HelveticaNeue-Light");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+  unicode-range: U+0000-007F, U+0080-00FF, U+0100-017F, U+0180-024F, U+1E00-1EFF, U+2C60-2C7F, U+2000-206F, U+A720-A7FF; }
 
 @font-face {
   font-family: 'Helvetica Neue';
   font-style: normal;
   font-weight: 400;
   src: local("HelveticaNeue");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+  unicode-range: U+0000-007F, U+0080-00FF, U+0100-017F, U+0180-024F, U+1E00-1EFF, U+2C60-2C7F, U+2000-206F, U+A720-A7FF; }
 
 @font-face {
   font-family: 'Helvetica Neue';
   font-style: normal;
   font-weight: 500;
   src: local("HelveticaNeue-Medium");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+  unicode-range: U+0000-007F, U+0080-00FF, U+0100-017F, U+0180-024F, U+1E00-1EFF, U+2C60-2C7F, U+2000-206F, U+A720-A7FF; }
 
 @font-face {
   font-family: 'Helvetica Neue';
   font-style: normal;
   font-weight: 700;
   src: local("HelveticaNeue-Bold");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+  unicode-range: U+0000-007F, U+0080-00FF, U+0100-017F, U+0180-024F, U+1E00-1EFF, U+2C60-2C7F, U+2000-206F, U+A720-A7FF; }
 
 .recommend-font-family {
-  font-family: 'PingFangSC', 'Helvetica Neue', 'Futura', 'Noto Sans Japanese', 'Noto Sans SC', 'HiraginoSans', 'Microsoft YaHei UI' !important; }
+  font-family: 'PingFangSC', 'Helvetica Neue', 'Futura', 'Noto Sans SC', 'HiraginoSans', 'Noto Sans Japanese', 'Microsoft YaHei UI' !important;
+  /*-------------Chinese---------English---------English-----Chinese--------Japanese----------Japanese--------------global--------------------*/ }
 
 a {
   text-decoration: none; }
@@ -1972,7 +1972,7 @@ strong, .strong {
 html {
   box-sizing: border-box;
   color: #444;
-  font-family: 'PingFangSC', 'Helvetica Neue', 'Futura', 'Noto Sans Japanese', 'Noto Sans SC', 'HiraginoSans', 'Microsoft YaHei UI' !important; }
+  font-family: 'PingFangSC', 'Helvetica Neue', 'Futura', 'Noto Sans SC', 'HiraginoSans', 'Noto Sans Japanese', 'Microsoft YaHei UI' !important; }
 
 body,
 .fix-sticky-footer {
