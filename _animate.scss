@@ -14,28 +14,28 @@
 @mixin card-background-animation() {
     animation-name: a;
     animation-duration: .3s;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in;
     animation-iteration-count: 1;
     animation-direction: normal;
     animation-fill-mode: both;
 }
 
 @keyframes fade-in-from-left {
-    0% { opacity: 0; transform: translateX(-30%)};
+    0% { opacity: 0; transform: translateX(-15%)};
     100% { opacity: 1; transform: translateX(0)};
 }
 
 @keyframes fade-in-from-right {
-    0% { opacity: 0; transform: translateX(30%)};
+    0% { opacity: 0; transform: translateX(15%)};
     100% { opacity: 1; transform: translateX(0)};
 }
 
 @keyframes fade-in-from-top {
-    0% { opacity: 0; transform: translateY(-30%)};
+    0% { opacity: 0; transform: translateY(-10%)};
     100% { opacity: 1; transform: translateY(0)};
 }
 
 @keyframes fade-in-from-bottom {
-    0% { opacity: 0; transform: translateY(30%)};
+    0% { opacity: 0; transform: translateY(10%)};
     100% { opacity: 1; transform: translateY(0)};
 }

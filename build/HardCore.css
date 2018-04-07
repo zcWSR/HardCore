@@ -1609,7 +1609,7 @@
 @keyframes fade-in-from-left {
   0% {
     opacity: 0;
-    transform: translateX(-30%); }
+    transform: translateX(-15%); }
   100% {
     opacity: 1;
     transform: translateX(0); } }
@@ -1617,7 +1617,7 @@
 @keyframes fade-in-from-right {
   0% {
     opacity: 0;
-    transform: translateX(30%); }
+    transform: translateX(15%); }
   100% {
     opacity: 1;
     transform: translateX(0); } }
@@ -1625,7 +1625,7 @@
 @keyframes fade-in-from-top {
   0% {
     opacity: 0;
-    transform: translateY(-30%); }
+    transform: translateY(-10%); }
   100% {
     opacity: 1;
     transform: translateY(0); } }
@@ -1633,7 +1633,7 @@
 @keyframes fade-in-from-bottom {
   0% {
     opacity: 0;
-    transform: translateY(30%); }
+    transform: translateY(10%); }
   100% {
     opacity: 1;
     transform: translateY(0); } }
@@ -3007,7 +3007,7 @@ header, .header {
     .jumbotron .jumbotron-background.blur {
       filter: blur(50px);
       margin: -50px; }
-    .jumbotron .jumbotron-background.grey::before {
+    .jumbotron .jumbotron-background.dark::before {
       content: '';
       position: absolute;
       top: 0;
@@ -3717,7 +3717,7 @@ footer a:active,
       opacity: 0;
       font-size: 4rem;
       text-align: center;
-      animation: fade-in-from-left 1s cubic-bezier(0, 0, 0.2, 1) 0.2s forwards; }
+      animation: fade-in-from-bottom 1s cubic-bezier(0, 0, 0.2, 1) 0.5s forwards; }
       .jumbotron .base-title .title::after {
         content: '';
         display: block;
@@ -3726,15 +3726,15 @@ footer a:active,
         width: inherit;
         height: 2px;
         background: white;
-        animation: fade-in-from-left 1s cubic-bezier(0, 0, 0.2, 1) forwards; }
+        animation: fade-in-from-bottom 1s cubic-bezier(0, 0, 0.2, 1) forwards; }
     .jumbotron .base-title .subtitle {
       opacity: 0;
       display: block;
       font-size: 1.5rem;
       padding-top: 1rem;
       text-align: center;
-      animation: fade-in-from-left 1s cubic-bezier(0, 0, 0.2, 1) 0.3s forwards; }
-  .jumbotron .post-title {
+      animation: fade-in-from-bottom 1s cubic-bezier(0, 0, 0.2, 1) 1s forwards; }
+  .jumbotron.small .post-title {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -3742,35 +3742,35 @@ footer a:active,
     color: white;
     text-align: center;
     text-shadow: 0 1px 2px #333; }
-    .jumbotron .post-title .title {
+    .jumbotron.small .post-title .title {
       opacity: 0;
       font-size: 3rem;
       animation: fade-in-from-left 1s cubic-bezier(0, 0, 0.2, 1) 0.3s forwards; }
       @media only screen and (max-width: 768px) {
-        .jumbotron .post-title .title {
+        .jumbotron.small .post-title .title {
           font-size: 2rem; } }
-    .jumbotron .post-title .date {
+    .jumbotron.small .post-title .date {
       opacity: 0;
       font-size: 0.9rem;
       margin-top: 1em;
       animation: fade-in-from-left 1s cubic-bezier(0, 0, 0.2, 1) 0.2s forwards; }
-    .jumbotron .post-title .info {
+    .jumbotron.small .post-title .info {
       opacity: 0;
       margin-top: 1em;
       animation: fade-in-from-left 1s cubic-bezier(0, 0, 0.2, 1) 0.1s forwards; }
-      .jumbotron .post-title .info > ul {
+      .jumbotron.small .post-title .info > ul {
         list-style: none; }
-        .jumbotron .post-title .info > ul li {
+        .jumbotron.small .post-title .info > ul li {
           display: inline;
           margin-right: 1rem; }
-          .jumbotron .post-title .info > ul li i {
+          .jumbotron.small .post-title .info > ul li i {
             display: inline;
             font-size: 0.8rem;
             vertical-align: middle;
             margin-right: 0.5rem; }
-          .jumbotron .post-title .info > ul li ul {
+          .jumbotron.small .post-title .info > ul li ul {
             display: inline; }
-            .jumbotron .post-title .info > ul li ul li {
+            .jumbotron.small .post-title .info > ul li ul li {
               display: inline;
               font-size: 0.8rem;
               vertical-align: middle;
