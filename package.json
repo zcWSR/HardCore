@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "gulp build"
+    "build": "gulp build",
+    "watch": "gulp watch"
   },
   "keywords": [
     "css",
@@ -17,5 +18,8 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-sass": "^3.1.0"
+  },
+  "dependencies": {
+    "gulp-concat": "^2.6.1"
   }
 }

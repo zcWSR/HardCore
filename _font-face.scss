@@ -337,10 +337,10 @@ U+FF00-FFEF;
 
 
 .recommend-font-family {
-    font-family: 'PingFangSC', 'Helvetica Neue', 'Futura', 'Noto Sans SC', 'HiraginoSans', 'Noto Sans Japanese', 'Microsoft YaHei UI' !important; 
+    font-family: -apple-system, 'PingFangSC', 'Helvetica Neue', 'Futura', 'Noto Sans SC', 'HiraginoSans', 'Noto Sans Japanese', 'Microsoft YaHei UI' !important; 
     /*-------------Chinese---------English---------English-----Chinese--------Japanese----------Japanese--------------global--------------------*/
 }
 
 @mixin recommend-font-family {
-    font-family: 'PingFangSC', 'Helvetica Neue', 'Futura', 'Noto Sans SC', 'HiraginoSans', 'Noto Sans Japanese', 'Microsoft YaHei UI' !important; 
+    font-family: -apple-system, 'PingFangSC', 'Helvetica Neue', 'Futura', 'Noto Sans SC', 'HiraginoSans', 'Noto Sans Japanese', 'Microsoft YaHei UI' !important; 
 }
