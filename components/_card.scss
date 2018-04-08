@@ -132,14 +132,12 @@
             border-top: 1px solid #ecf0f1;
             border-bottom: 1px solid #ecf0f1;
         } 
-
-        padding: 22px 0;
         font-size: $card-info-font-size;
         &>ul {
             list-style: none;
             li {
-                display: inline;
-                margin-right: 1.4rem;
+                display: inline-block;
+                margin: 1.4rem 1.4rem 1.4rem 0;
                 i {
                     display: inline;
                     font-size: $card-info-font-size;
@@ -153,7 +151,6 @@
                         font-size: $card-info-font-size;
                         vertical-align: middle;
                         margin-right: 0.5rem;
-
                     }
                 }
             }

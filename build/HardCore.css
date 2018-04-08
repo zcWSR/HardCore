@@ -1471,7 +1471,7 @@
 .grey.lighten-5 {
   background-color: #fafafa !important; }
 
-.grey-text.text-lighten-5 {
+.grey-text.text-lighten-5, ::selection {
   color: #fafafa !important; }
 
 .grey.lighten-4 {
@@ -1510,7 +1510,7 @@
 .grey-text.text-darken-2 {
   color: #616161 !important; }
 
-.grey.darken-3 {
+.grey.darken-3, ::selection, .jumbotron .jumbotron-background.black {
   background-color: #424242 !important; }
 
 .grey-text.text-darken-3 {
@@ -1549,7 +1549,7 @@
 @keyframes fade-in-from-left {
   0% {
     opacity: 0;
-    transform: translateX(-15%); }
+    transform: translateX(-10px); }
   100% {
     opacity: 1;
     transform: translateX(0); } }
@@ -1557,7 +1557,7 @@
 @keyframes fade-in-from-right {
   0% {
     opacity: 0;
-    transform: translateX(15%); }
+    transform: translateX(-10px); }
   100% {
     opacity: 1;
     transform: translateX(0); } }
@@ -1565,7 +1565,7 @@
 @keyframes fade-in-from-top {
   0% {
     opacity: 0;
-    transform: translateY(-10%); }
+    transform: translateY(-10px); }
   100% {
     opacity: 1;
     transform: translateY(0); } }
@@ -1573,7 +1573,7 @@
 @keyframes fade-in-from-bottom {
   0% {
     opacity: 0;
-    transform: translateY(10%); }
+    transform: translateY(10px); }
   100% {
     opacity: 1;
     transform: translateY(0); } }
@@ -2938,15 +2938,15 @@ header, .header {
   transition: height .3s ease; }
   .jumbotron .jumbotron-background {
     position: fixed;
-    height: inherit;
+    height: 100vh;
     width: 100%;
     left: 0;
     top: 0;
-    z-index: -1;
-    transition: filter,margin ease-out 1s; }
+    z-index: -50;
+    transition: filter, margin, opacity ease-out 1s; }
     .jumbotron .jumbotron-background.blur {
-      filter: blur(50px);
-      margin: -50px; }
+      filter: blur(5px);
+      margin: -5px; }
     .jumbotron .jumbotron-background.dark::before {
       content: '';
       position: absolute;
@@ -2956,6 +2956,10 @@ header, .header {
       bottom: 0;
       background: black;
       opacity: .3; }
+    .jumbotron .jumbotron-background.black {
+      z-index: -49; }
+    .jumbotron .jumbotron-background.vanish {
+      opacity: 0; }
 
 .card,
 .card-flat {
@@ -3046,7 +3050,6 @@ header, .header {
   font-size: 19.2px; }
 
 .card-flat .card-info {
-  padding: 22px 0;
   font-size: 0.8rem; }
   .card-flat .card-info.with-border {
     border-top: 1px solid #ecf0f1;
@@ -3054,8 +3057,8 @@ header, .header {
   .card-flat .card-info > ul {
     list-style: none; }
     .card-flat .card-info > ul li {
-      display: inline;
-      margin-right: 1.4rem; }
+      display: inline-block;
+      margin: 1.4rem 1.4rem 1.4rem 0; }
       .card-flat .card-info > ul li i {
         display: inline;
         font-size: 0.8rem;
@@ -3890,23 +3893,20 @@ footer a:active,
       opacity: 0;
       font-size: 4rem;
       text-align: center;
-      animation: fade-in-from-bottom 1s cubic-bezier(0, 0, 0.2, 1) 0.5s forwards; }
-      .jumbotron .base-title .title::after {
-        content: '';
-        display: block;
-        margin-top: 1rem;
-        opacity: 0;
-        width: inherit;
-        height: 2px;
-        background: white;
-        animation: fade-in-from-bottom 1s cubic-bezier(0, 0, 0.2, 1) forwards; }
+      animation: fade-in-from-bottom .25s linear .4s forwards; }
+    .jumbotron .base-title .divider {
+      display: block;
+      height: 2px;
+      margin-top: 1em;
+      background: white;
+      animation: fade-in-from-left .25s linear forwards; }
     .jumbotron .base-title .subtitle {
       opacity: 0;
       display: block;
       font-size: 1.5rem;
       padding-top: 1rem;
       text-align: center;
-      animation: fade-in-from-bottom 1s cubic-bezier(0, 0, 0.2, 1) 1s forwards; }
+      animation: fade-in-from-bottom .25s linear .8s forwards; }
   .jumbotron.small .post-title {
     position: absolute;
     left: 50%;
@@ -3918,7 +3918,7 @@ footer a:active,
     .jumbotron.small .post-title .title {
       opacity: 0;
       font-size: 3rem;
-      animation: fade-in-from-left 1s cubic-bezier(0, 0, 0.2, 1) 0.3s forwards; }
+      animation: fade-in-from-buttom .2s linear .3s forwards; }
       @media only screen and (max-width: 768px) {
         .jumbotron.small .post-title .title {
           font-size: 2rem; } }

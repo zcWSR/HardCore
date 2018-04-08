@@ -10,19 +10,14 @@
 
     .jumbotron-background {
         position: fixed;
-        height: inherit;
+        height: 100vh;
         width: 100%;
         left: 0; top: 0;
-        z-index: -1;
-        transition: filter,margin ease-out 1s; 
-        // img {
-        //     height: 100%;
-        //     width: auto;
-        //     margin: 0;
-        // }
+        z-index: -50;
+        transition: filter, margin, opacity ease-out 1s; 
         &.blur {
-            filter: blur(50px);
-            margin: -50px;
+            filter: blur(5px);
+            margin: -5px;
         }
 
         &.dark {
@@ -36,6 +31,15 @@
                 background: black;
                 opacity: .3;
             }
+        }
+
+        &.black {
+            z-index: -49;
+            @extend .grey.darken-3;
+        }
+
+        &.vanish {
+            opacity: 0;
         }
     }
 }

@@ -4,6 +4,10 @@ html {
     @include recommend-font-family();
 }
 
+::selection {
+    @extend .grey.darken-3;
+    @extend .grey-text.text-lighten-5;
+}
 body,
 .fix-sticky-footer {
     display: flex;
