@@ -14,10 +14,9 @@
         width: 100%;
         left: 0; top: 0;
         z-index: -50;
-        transition: filter, margin, opacity ease-out 1s; 
+        transition: filter, opacity, background-color, ease-out 1s; 
         &.blur {
             filter: blur(5px);
-            margin: -5px;
         }
 
         &.dark {
@@ -33,9 +32,9 @@
             }
         }
 
-        &.black {
+        &.front {
             z-index: -49;
-            @extend .grey.darken-3;
+            background-color: #616161;
         }
 
         &.vanish {

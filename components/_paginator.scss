@@ -1,15 +1,15 @@
-ul.paginator {
+.pager {
     display: block;
     position: relative;
-    list-style: none;
-    li {
+    .pager-item {
         display: inline-block;
         height: $paginator-height;
         text-align: center;
+        line-height: $paginator-height;
+        font-size: $paginator-font-size;
         a {
             display: inherit;
-            line-height: $paginator-height;
-            font-size: $paginator-font-size;
+            height: $paginator-height;
             padding: 0 .6rem;
             color: $paginator-font-color;
             background: $button-background-flat;
@@ -27,8 +27,26 @@ ul.paginator {
                 background-size: 400% 200%, 400% 200%, 100% 100%;
                 color: $button-font-color-base;
             }
-
         }
+
+        &.go-before {
+            // margin-right: $paginator-height / 2;
+            overflow: hidden;
+            vertical-align: bottom;
+            a i {
+                vertical-align: text-top;
+            }
+        }
+        
+        &.go-after {
+            // margin-left: $paginator-height / 2;
+            overflow: hidden;
+            vertical-align: bottom;
+            a i {
+                vertical-align: text-top;
+            }
+        }
+
         &[disabled],
         &.disabled {
             a {

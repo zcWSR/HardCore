@@ -1510,7 +1510,7 @@
 .grey-text.text-darken-2 {
   color: #616161 !important; }
 
-.grey.darken-3, ::selection, .jumbotron .jumbotron-background.black {
+.grey.darken-3, ::selection {
   background-color: #424242 !important; }
 
 .grey-text.text-darken-3 {
@@ -2943,10 +2943,9 @@ header, .header {
     left: 0;
     top: 0;
     z-index: -50;
-    transition: filter, margin, opacity ease-out 1s; }
+    transition: filter, opacity, background-color, ease-out 1s; }
     .jumbotron .jumbotron-background.blur {
-      filter: blur(5px);
-      margin: -5px; }
+      filter: blur(5px); }
     .jumbotron .jumbotron-background.dark::before {
       content: '';
       position: absolute;
@@ -2956,8 +2955,9 @@ header, .header {
       bottom: 0;
       background: black;
       opacity: .3; }
-    .jumbotron .jumbotron-background.black {
-      z-index: -49; }
+    .jumbotron .jumbotron-background.front {
+      z-index: -49;
+      background-color: #616161; }
     .jumbotron .jumbotron-background.vanish {
       opacity: 0; }
 
@@ -3792,18 +3792,18 @@ input[type="submit"] {
       border-radius: 50%;
       background: #444; }
 
-ul.paginator {
+.pager {
   display: block;
-  position: relative;
-  list-style: none; }
-  ul.paginator li {
+  position: relative; }
+  .pager .pager-item {
     display: inline-block;
     height: 1.8rem;
-    text-align: center; }
-    ul.paginator li a {
+    text-align: center;
+    line-height: 1.8rem;
+    font-size: 1.2rem; }
+    .pager .pager-item a {
       display: inherit;
-      line-height: 1.8rem;
-      font-size: 1.2rem;
+      height: 1.8rem;
       padding: 0 .6rem;
       color: #444;
       background: linear-gradient(45deg, #0277bd 50%, transparent 50%) no-repeat, linear-gradient(45deg, #bdbdbd 50%, transparent 50%) no-repeat, linear-gradient(45deg, transparent 100%, transparent 100%) no-repeat;
@@ -3811,18 +3811,28 @@ ul.paginator {
       cursor: pointer;
       will-change: background-size, color;
       transition: ease-out .2s; }
-      ul.paginator li a:hover {
+      .pager .pager-item a:hover {
         background-size: 0 200%, 400% 200%, 100% 100%;
         color: #fff; }
-      ul.paginator li a:focus {
+      .pager .pager-item a:focus {
         background-size: 400% 200%, 400% 200%, 100% 100%;
         color: #fff; }
-    ul.paginator li[disabled] a, ul.paginator li.disabled a {
+    .pager .pager-item.go-before {
+      overflow: hidden;
+      vertical-align: bottom; }
+      .pager .pager-item.go-before a i {
+        vertical-align: text-top; }
+    .pager .pager-item.go-after {
+      overflow: hidden;
+      vertical-align: bottom; }
+      .pager .pager-item.go-after a i {
+        vertical-align: text-top; }
+    .pager .pager-item[disabled] a, .pager .pager-item.disabled a {
       pointer-events: none;
       cursor: not-allowed;
       opacity: 0.65;
       background: transparent; }
-    ul.paginator li[selected] a, ul.paginator li.selected a {
+    .pager .pager-item[selected] a, .pager .pager-item.selected a {
       pointer-events: none;
       cursor: default;
       background: #0277bd;
