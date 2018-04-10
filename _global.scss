@@ -61,13 +61,13 @@ ul {
     padding: 0;
 }
 
-a {
+:link {
     text-decoration: none;
     color: color('light-blue', 'darken-3');
 }
-a:visited {
+:visited {
     text-decoration: none;
-    color: color('light-blue', 'darken-3');
+    color: color('light-blue', 'darken-4');
 }
 
 ul {

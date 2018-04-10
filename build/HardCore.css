@@ -1964,13 +1964,13 @@ ul {
   margin: 0;
   padding: 0; }
 
-a {
+:link {
   text-decoration: none;
   color: #0277bd; }
 
-a:visited {
+:visited {
   text-decoration: none;
-  color: #0277bd; }
+  color: #01579b; }
 
 ul {
   list-style-type: none;
@@ -2934,8 +2934,7 @@ header, .header {
   position: relative;
   height: 25rem;
   padding: 2rem 1rem;
-  overflow: hidden;
-  transition: height .3s ease; }
+  overflow: hidden; }
   .jumbotron .jumbotron-background {
     position: fixed;
     height: 100vh;
@@ -2943,7 +2942,10 @@ header, .header {
     left: 0;
     top: 0;
     z-index: -50;
-    transition: filter, opacity, background-color, ease-out 1s; }
+    transition: filter ease-out 1s, opacity ease-out 1s, background-color ease-out 1s, background-position .5s ease-out 1s;
+    background-position: center 50px;
+    background-repeat: no-repeat;
+    background-size: cover; }
     .jumbotron .jumbotron-background.blur {
       filter: blur(5px); }
     .jumbotron .jumbotron-background.dark::before {
@@ -3963,6 +3965,6 @@ footer a:active,
 .cards-container .card-flat {
   margin-top: 3rem; }
 
-.global-bg {
+.white-bg {
   position: relative;
   background: white; }
