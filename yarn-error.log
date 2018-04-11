@@ -1,8 +1,8 @@
 Arguments: 
-  /usr/local/bin/node /Users/qitmac000542/.yarn/bin/yarn.js run watch
+  /usr/local/bin/node /Users/qitmac000542/.yarn/bin/yarn.js start
 
 PATH: 
-  /Users/qitmac000542/.yarn/bin:/Users/qitmac000542/.config/yarn/global/node_modules/.bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/qitmac000542/.yarn/bin:/Users/qitmac000542/.config/yarn/global/node_modules/.bin
+  /Users/qitmac000542/.yarn/bin:/Users/qitmac000542/.config/yarn/global/node_modules/.bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 
 Yarn version: 
   1.5.1
@@ -34,6 +34,9 @@ npm manifest:
     "devDependencies": {
       "gulp": "^3.9.1",
       "gulp-sass": "^3.1.0"
+    },
+    "dependencies": {
+      "gulp-concat": "^2.6.1"
     }
   }
 
@@ -313,9 +316,17 @@ Lockfile:
       strip-ansi "^3.0.1"
       wrap-ansi "^2.0.0"
   
+  clone-buffer@^1.0.0:
+    version "1.0.0"
+    resolved "http://registry.npm.taobao.org/clone-buffer/download/clone-buffer-1.0.0.tgz#e3e25b207ac4e701af721e2cb5a16792cac3dc58"
+  
   clone-stats@^0.0.1:
     version "0.0.1"
     resolved "http://registry.npm.taobao.org/clone-stats/download/clone-stats-0.0.1.tgz#b88f94a82cf38b8791d58046ea4029ad88ca99d1"
+  
+  clone-stats@^1.0.0:
+    version "1.0.0"
+    resolved "http://registry.npm.taobao.org/clone-stats/download/clone-stats-1.0.0.tgz#b3782dff8bb5474e18b9b6bf0fdfe782f8777680"
   
   clone@^0.2.0:
     version "0.2.0"
@@ -324,6 +335,18 @@ Lockfile:
   clone@^1.0.0, clone@^1.0.2:
     version "1.0.4"
     resolved "http://registry.npm.taobao.org/clone/download/clone-1.0.4.tgz#da309cc263df15994c688ca902179ca3c7cd7c7e"
+  
+  clone@^2.1.1:
+    version "2.1.2"
+    resolved "http://registry.npm.taobao.org/clone/download/clone-2.1.2.tgz#1b7f4b9f591f1e8f83670401600345a02887435f"
+  
+  cloneable-readable@^1.0.0:
+    version "1.1.2"
+    resolved "http://registry.npm.taobao.org/cloneable-readable/download/cloneable-readable-1.1.2.tgz#d591dee4a8f8bc15da43ce97dceeba13d43e2a65"
+    dependencies:
+      inherits "^2.0.1"
+      process-nextick-args "^2.0.0"
+      readable-stream "^2.3.5"
   
   co@^4.6.0:
     version "4.6.0"
@@ -361,6 +384,12 @@ Lockfile:
   concat-map@0.0.1:
     version "0.0.1"
     resolved "http://registry.npm.taobao.org/concat-map/download/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
+  
+  concat-with-sourcemaps@^1.0.0:
+    version "1.0.5"
+    resolved "http://registry.npm.taobao.org/concat-with-sourcemaps/download/concat-with-sourcemaps-1.0.5.tgz#8964bc2347d05819b63798104d87d6e001bed8d0"
+    dependencies:
+      source-map "^0.6.1"
   
   console-control-strings@^1.0.0, console-control-strings@~1.1.0:
     version "1.1.0"
@@ -828,6 +857,14 @@ Lockfile:
     version "1.2.3"
     resolved "http://registry.npm.taobao.org/graceful-fs/download/graceful-fs-1.2.3.tgz#15a4806a57547cb2d2dbf27f42e89a8c3451b364"
   
+  gulp-concat@^2.6.1:
+    version "2.6.1"
+    resolved "http://registry.npm.taobao.org/gulp-concat/download/gulp-concat-2.6.1.tgz#633d16c95d88504628ad02665663cee5a4793353"
+    dependencies:
+      concat-with-sourcemaps "^1.0.0"
+      through2 "^2.0.0"
+      vinyl "^2.0.0"
+  
   gulp-sass@^3.1.0:
     version "3.2.1"
     resolved "http://registry.npm.taobao.org/gulp-sass/download/gulp-sass-3.2.1.tgz#2e3688a96fd8be1c0c01340750c191b2e79fab94"
@@ -1021,7 +1058,7 @@ Lockfile:
     version "1.0.2"
     resolved "http://registry.npm.taobao.org/inherits/download/inherits-1.0.2.tgz#ca4309dadee6b54cc0b8d247e8d7c7a0975bdc9b"
   
-  inherits@2, inherits@~2.0.0, inherits@~2.0.1, inherits@~2.0.3:
+  inherits@2, inherits@^2.0.1, inherits@~2.0.0, inherits@~2.0.1, inherits@~2.0.3:
     version "2.0.3"
     resolved "http://registry.npm.taobao.org/inherits/download/inherits-2.0.3.tgz#633c2c83e3da42a502f52466022480f4208261de"
   
@@ -1804,7 +1841,7 @@ Lockfile:
     version "1.0.3"
     resolved "http://registry.npm.taobao.org/pretty-hrtime/download/pretty-hrtime-1.0.3.tgz#b7e3ea42435a4c9b2759d99e0f201eb195802ee1"
   
-  process-nextick-args@~2.0.0:
+  process-nextick-args@^2.0.0, process-nextick-args@~2.0.0:
     version "2.0.0"
     resolved "http://registry.npm.taobao.org/process-nextick-args/download/process-nextick-args-2.0.0.tgz#a37d732f4271b4ab1ad070d35508e8290788ffaa"
   
@@ -1848,7 +1885,7 @@ Lockfile:
       isarray "0.0.1"
       string_decoder "~0.10.x"
   
-  readable-stream@^2.0.1, readable-stream@^2.0.6, readable-stream@^2.1.5:
+  readable-stream@^2.0.1, readable-stream@^2.0.6, readable-stream@^2.1.5, readable-stream@^2.3.5:
     version "2.3.6"
     resolved "http://registry.npm.taobao.org/readable-stream/download/readable-stream-2.3.6.tgz#b11c27d88b8ff1fbe070643cf94b0c79ae1b0aaf"
     dependencies:
@@ -1889,6 +1926,10 @@ Lockfile:
       extend-shallow "^3.0.2"
       safe-regex "^1.1.0"
   
+  remove-trailing-separator@^1.0.1:
+    version "1.1.0"
+    resolved "http://registry.npm.taobao.org/remove-trailing-separator/download/remove-trailing-separator-1.1.0.tgz#c24bce2a283adad5bc3f58e0d48249b92379d8ef"
+  
   repeat-element@^1.1.2:
     version "1.1.2"
     resolved "http://registry.npm.taobao.org/repeat-element/download/repeat-element-1.1.2.tgz#ef089a178d1483baae4d93eb98b4f9e4e11d990a"
@@ -1906,6 +1947,10 @@ Lockfile:
   replace-ext@0.0.1:
     version "0.0.1"
     resolved "http://registry.npm.taobao.org/replace-ext/download/replace-ext-0.0.1.tgz#29bbd92078a739f0bcce2b4ee41e837953522924"
+  
+  replace-ext@^1.0.0:
+    version "1.0.0"
+    resolved "http://registry.npm.taobao.org/replace-ext/download/replace-ext-1.0.0.tgz#de63128373fcbf7c3ccfa4de5a480c45a67958eb"
   
   request@2:
     version "2.85.0"
@@ -2128,6 +2173,10 @@ Lockfile:
   source-map@^0.5.1, source-map@^0.5.6:
     version "0.5.7"
     resolved "http://registry.npm.taobao.org/source-map/download/source-map-0.5.7.tgz#8a039d2d1021d22d1ea14c80d8ea468ba2ef3fcc"
+  
+  source-map@^0.6.1:
+    version "0.6.1"
+    resolved "http://registry.npm.taobao.org/source-map/download/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
   
   sparkles@^1.0.0:
     version "1.0.0"
@@ -2428,6 +2477,17 @@ Lockfile:
       clone-stats "^0.0.1"
       replace-ext "0.0.1"
   
+  vinyl@^2.0.0:
+    version "2.1.0"
+    resolved "http://registry.npm.taobao.org/vinyl/download/vinyl-2.1.0.tgz#021f9c2cf951d6b939943c89eb5ee5add4fd924c"
+    dependencies:
+      clone "^2.1.1"
+      clone-buffer "^1.0.0"
+      clone-stats "^1.0.0"
+      cloneable-readable "^1.0.0"
+      remove-trailing-separator "^1.0.1"
+      replace-ext "^1.0.0"
+  
   which-module@^1.0.0:
     version "1.0.0"
     resolved "http://registry.npm.taobao.org/which-module/download/which-module-1.0.0.tgz#bba63ca861948994ff307736089e3b96026c2a4f"
@@ -2492,18 +2552,14 @@ Lockfile:
       yargs-parser "^5.0.0"
 
 Trace: 
-  Error: Command failed.
-  Exit code: 1
-  Command: sh
-  Arguments: -c gulp watch
-  Directory: /Users/qitmac000542/my/HardCore
-  Output:
-  
-      at ProcessTermError.Error (native)
-      at ProcessTermError.MessageError (/Users/qitmac000542/.yarn/lib/cli.js:186:110)
-      at new ProcessTermError (/Users/qitmac000542/.yarn/lib/cli.js:226:113)
-      at ChildProcess.<anonymous> (/Users/qitmac000542/.yarn/lib/cli.js:30281:17)
-      at emitTwo (events.js:106:13)
-      at ChildProcess.emit (events.js:191:7)
-      at maybeClose (internal/child_process.js:920:16)
-      at Process.ChildProcess._handle.onexit (internal/child_process.js:230:5)
+  Error: Command "start" not found.
+      at MessageError.Error (native)
+      at new MessageError (/Users/qitmac000542/.yarn/lib/cli.js:186:110)
+      at /Users/qitmac000542/.yarn/lib/cli.js:87307:17
+      at next (native)
+      at step (/Users/qitmac000542/.yarn/lib/cli.js:98:30)
+      at /Users/qitmac000542/.yarn/lib/cli.js:116:14
+      at Promise.F (/Users/qitmac000542/.yarn/lib/cli.js:23451:28)
+      at /Users/qitmac000542/.yarn/lib/cli.js:95:12
+      at runCommand (/Users/qitmac000542/.yarn/lib/cli.js:87312:22)
+      at Object.<anonymous> (/Users/qitmac000542/.yarn/lib/cli.js:87412:14)

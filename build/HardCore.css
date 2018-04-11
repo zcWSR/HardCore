@@ -2936,7 +2936,7 @@ header, .header {
   padding: 2rem 1rem;
   overflow: hidden; }
   .jumbotron .jumbotron-background {
-    position: fixed;
+    position: absolute;
     height: 100vh;
     width: 100%;
     left: 0;
@@ -2947,7 +2947,7 @@ header, .header {
     background-repeat: no-repeat;
     background-size: cover; }
     .jumbotron .jumbotron-background.blur {
-      filter: blur(5px); }
+      filter: blur(1px); }
     .jumbotron .jumbotron-background.dark::before {
       content: '';
       position: absolute;

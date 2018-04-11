@@ -3,3 +3,5 @@
 /.vscode
 /build/*.png
 /build/*.jpg
+yarn.log
+yarn-error.log
