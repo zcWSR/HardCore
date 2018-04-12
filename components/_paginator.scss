@@ -4,6 +4,7 @@
     .pager-item {
         display: inline-block;
         height: $paginator-height;
+        user-select: none;
         text-align: center;
         line-height: $paginator-height;
         font-size: $paginator-font-size;
@@ -29,7 +30,7 @@
             }
         }
 
-        &.go-before {
+        &.go-prev, &.go-next {
             // margin-right: $paginator-height / 2;
             overflow: hidden;
             vertical-align: bottom;
@@ -38,14 +39,14 @@
             }
         }
         
-        &.go-after {
-            // margin-left: $paginator-height / 2;
-            overflow: hidden;
-            vertical-align: bottom;
-            a i {
-                vertical-align: text-top;
-            }
-        }
+        // &.go-next {
+        //     // margin-left: $paginator-height / 2;
+        //     overflow: hidden;
+        //     vertical-align: bottom;
+        //     a i {
+        //         vertical-align: text-top;
+        //     }
+        // }
 
         &[disabled],
         &.disabled {
