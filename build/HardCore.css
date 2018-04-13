@@ -2936,18 +2936,18 @@ header, .header {
   padding: 2rem 1rem;
   overflow: hidden; }
   .jumbotron .jumbotron-background {
-    position: absolute;
+    position: fixed;
     height: 100vh;
     width: 100%;
     left: 0;
     top: 0;
     z-index: -50;
-    transition: filter ease-out 1s, opacity ease-out 1s, background-color ease-out 1s, background-position .5s ease-out 1s;
+    transition: opacity ease-out 1s, background-color ease-out 1s, background-position .5s ease-out 1s;
     background-position: center 50px;
     background-repeat: no-repeat;
     background-size: cover; }
     .jumbotron .jumbotron-background.blur {
-      filter: blur(1px); }
+      filter: blur(2px); }
     .jumbotron .jumbotron-background.dark::before {
       content: '';
       position: absolute;
@@ -3796,7 +3796,8 @@ input[type="submit"] {
 
 .pager {
   display: block;
-  position: relative; }
+  position: relative;
+  user-select: none; }
   .pager .pager-item {
     display: inline-block;
     height: 1.8rem;

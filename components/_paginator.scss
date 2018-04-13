@@ -1,6 +1,7 @@
 .pager {
     display: block;
     position: relative;
+    user-select: none;
     .pager-item {
         display: inline-block;
         height: $paginator-height;
