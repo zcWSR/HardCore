@@ -6,16 +6,14 @@
         position: absolute;
         left: 50%;
         top: 50%;
-        transform: translateX(-50%) translateY(-50%) ;
+        transform: translateX(-50%) translateY(-50%);
         color: white;
         text-shadow: 0px 1px 2px #333;
         .title {
             opacity: 0;
             font-size: 4rem;
             text-align: center;
-            animation: fade-in-from-bottom .25s linear .4s forwards;
-
-            // &::after {
+            animation: fade-in-from-bottom .25s linear .4s forwards; // &::after {
             //     content: '';
             //     display: block;
             //     margin-top: 1rem;
@@ -26,7 +24,6 @@
             //     animation: fade-in-from-bottom 1s linear forwards;
             // }
         }
-
         .divider {
             display: block;
             height: 2px;
@@ -34,75 +31,69 @@
             background: white;
             animation: fade-in-from-left .25s linear forwards;
         }
-
         .subtitle {
-            opacity: 0;            
-            display: block;
-            //border-top: 2px solid rgba(0,0,0,.7);
+            opacity: 0;
+            display: block; //border-top: 2px solid rgba(0,0,0,.7);
             font-size: 1.5rem;
             padding-top: 1rem;
             text-align: center;
             animation: fade-in-from-bottom .25s linear .8s forwards;
         }
     }
-     
-    &.small .post-title {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translateX(-50%) translateY(-50%);
-        color: white;
-        text-align: center;
-        text-shadow: 0 1px 2px #333;
-        .title {
-            opacity: 0;
-            font-size: 3rem;
-            @media #{$small-and-down} {
-                font-size: 2rem;
+    &.small {
+        height: 40vh;
+        .post-title {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            color: white;
+            text-align: center;
+            text-shadow: 0 1px 2px #333;
+            .title {
+                opacity: 0;
+                font-size: 3rem;
+                @media #{$small-and-down} {
+                    font-size: 2rem;
+                }
+                animation: fade-in-from-bottom .25s linear forwards;
             }
-            animation: fade-in-from-buttom .2s linear .3s forwards;
-        }
-
-        .date {
-            opacity: 0;
-            font-size: 0.9rem;
-            margin-top: 1em;
-            animation: fade-in-from-left 1s cubic-bezier(0, 0, 0.2, 1) .2s forwards;
-        }
-
-        .info {
-            opacity: 0;
-            margin-top: 1em;
-            &>ul {
-                list-style: none;
-                li {
-                    display: inline;
-                    margin-right: 1rem;
-                    i {
+            .date {
+                opacity: 0;
+                font-size: 0.9rem;
+                margin-top: 1em;
+                animation: fade-in-from-bottom .25s linear .4s forwards;
+            }
+            .info {
+                opacity: 0;
+                margin-top: 1em;
+                animation: fade-in-from-bottom .25s linear .8s forwards;
+                &>ul {
+                    list-style: none;
+                    li {
                         display: inline;
-                        font-size: 0.8rem;
-                        vertical-align: middle;
-                        margin-right: 0.5rem;
-                    }
-                    ul {
-                        display: inline;
-                        li {
+                        margin-right: 1rem;
+                        i {
                             display: inline;
                             font-size: 0.8rem;
                             vertical-align: middle;
                             margin-right: 0.5rem;
-
+                        }
+                        ul {
+                            display: inline;
+                            li {
+                                display: inline;
+                                font-size: 0.8rem;
+                                vertical-align: middle;
+                                margin-right: 0.5rem;
+                            }
                         }
                     }
                 }
             }
-
-        animation: fade-in-from-left 1s cubic-bezier(0, 0, 0.2, 1) .1s forwards;
         }
     }
 }
-
-
 
 .cards-container {
     .card,
@@ -111,7 +102,7 @@
     }
 }
 
-.white-bg {
+.white-bg { 
     position: relative;
     background: white;
 }

@@ -15,7 +15,7 @@
         left: 0; top: 0;
         z-index: -50;
         transition: opacity ease-out 1s, background-color ease-out 1s, background-position .5s ease-out 1s; 
-        background-position: center 50px;
+        background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         &.blur {

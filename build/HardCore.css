@@ -1921,7 +1921,9 @@ body,
   flex-direction: column; }
 
 main {
-  flex: 1 0 auto; }
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column; }
 
 article,
 aside,
@@ -2943,7 +2945,7 @@ header, .header {
     top: 0;
     z-index: -50;
     transition: opacity ease-out 1s, background-color ease-out 1s, background-position .5s ease-out 1s;
-    background-position: center 50px;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover; }
     .jumbotron .jumbotron-background.blur {
@@ -3031,18 +3033,17 @@ header, .header {
     float: right;
     margin-bottom: 1rem; }
 
-.card-flat .card-header {
-  width: 100%; }
-  .card-flat .card-header .header-img {
-    background-position: 0 50%;
-    background-size: cover;
-    background: transparent; }
-  .card-flat .card-header p {
-    position: relative;
-    bottom: 0;
-    left: 0;
-    font-size: 3rem;
-    padding: .5rem 1rem .5rem 0; }
+.card-flat .card-header .header-img {
+  background-position: 0 50%;
+  background-size: cover;
+  background: transparent; }
+
+.card-flat .card-header p {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  font-size: 3rem;
+  padding: .5rem 1rem .5rem 0; }
 
 .card-flat .card-content {
   padding: 1.5rem 0 1rem 0;
@@ -3916,47 +3917,49 @@ footer a:active,
       padding-top: 1rem;
       text-align: center;
       animation: fade-in-from-bottom .25s linear .8s forwards; }
-  .jumbotron.small .post-title {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    color: white;
-    text-align: center;
-    text-shadow: 0 1px 2px #333; }
-    .jumbotron.small .post-title .title {
-      opacity: 0;
-      font-size: 3rem;
-      animation: fade-in-from-buttom .2s linear .3s forwards; }
-      @media only screen and (max-width: 768px) {
-        .jumbotron.small .post-title .title {
-          font-size: 2rem; } }
-    .jumbotron.small .post-title .date {
-      opacity: 0;
-      font-size: 0.9rem;
-      margin-top: 1em;
-      animation: fade-in-from-left 1s cubic-bezier(0, 0, 0.2, 1) 0.2s forwards; }
-    .jumbotron.small .post-title .info {
-      opacity: 0;
-      margin-top: 1em;
-      animation: fade-in-from-left 1s cubic-bezier(0, 0, 0.2, 1) 0.1s forwards; }
-      .jumbotron.small .post-title .info > ul {
-        list-style: none; }
-        .jumbotron.small .post-title .info > ul li {
-          display: inline;
-          margin-right: 1rem; }
-          .jumbotron.small .post-title .info > ul li i {
+  .jumbotron.small {
+    height: 40vh; }
+    .jumbotron.small .post-title {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      color: white;
+      text-align: center;
+      text-shadow: 0 1px 2px #333; }
+      .jumbotron.small .post-title .title {
+        opacity: 0;
+        font-size: 3rem;
+        animation: fade-in-from-bottom .25s linear forwards; }
+        @media only screen and (max-width: 768px) {
+          .jumbotron.small .post-title .title {
+            font-size: 2rem; } }
+      .jumbotron.small .post-title .date {
+        opacity: 0;
+        font-size: 0.9rem;
+        margin-top: 1em;
+        animation: fade-in-from-bottom .25s linear .4s forwards; }
+      .jumbotron.small .post-title .info {
+        opacity: 0;
+        margin-top: 1em;
+        animation: fade-in-from-bottom .25s linear .8s forwards; }
+        .jumbotron.small .post-title .info > ul {
+          list-style: none; }
+          .jumbotron.small .post-title .info > ul li {
             display: inline;
-            font-size: 0.8rem;
-            vertical-align: middle;
-            margin-right: 0.5rem; }
-          .jumbotron.small .post-title .info > ul li ul {
-            display: inline; }
-            .jumbotron.small .post-title .info > ul li ul li {
+            margin-right: 1rem; }
+            .jumbotron.small .post-title .info > ul li i {
               display: inline;
               font-size: 0.8rem;
               vertical-align: middle;
               margin-right: 0.5rem; }
+            .jumbotron.small .post-title .info > ul li ul {
+              display: inline; }
+              .jumbotron.small .post-title .info > ul li ul li {
+                display: inline;
+                font-size: 0.8rem;
+                vertical-align: middle;
+                margin-right: 0.5rem; }
 
 .cards-container .card,
 .cards-container .card-flat {
