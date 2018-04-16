@@ -19,7 +19,8 @@
         background-repeat: no-repeat;
         background-size: cover;
         &.blur {
-            filter: blur(2px);
+            filter: blur(1px);
+            transform: scale(1.1);
         }
 
         &.dark {

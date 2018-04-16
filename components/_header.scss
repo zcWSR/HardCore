@@ -1,19 +1,157 @@
-
-.small-header {
-    @include header-classes($small-header-height);
-}
-
 header, .header {
-    @include header-classes($medium-header-height);
+    // Header
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    position: relative;
+    height: $small-header-height;
+    background-color: $header-background-color;
+    color: $header-content-color;
+    transition: background-color ease-in-out .5s, box-shadow ease-in-out .5s;
+    @extend .z-depth-2;
+    &.fix-top {
+        z-index: 99;
+        position: fixed;
+        width: 100%;
+    }
+    .logo {
+        display: flex;
+        align-items: center;
+        padding: 0 1.5rem;
+        font-size: $small-header-height * 0.70;
+        overflow: hidden;
+        img {
+            margin-right: 1rem;
+            width: $small-header-height * .8;
+            border: solid $header-content-color 1px;
+            border-radius: 50%;
+            transition: box-shadow ease-in-out .3s;
+        }
 
-}
+        a {
+            float: left;
+            color: $header-content-color;
+            transition: text-shadow ease-in-out .2s;
+        }
 
-.big-header {
-    @include header-classes($big-header-height);
-}
+        a:visited {
+            color: $header-content-color;
+        }
 
-.ultra-header {
-    @include header-classes($ultra-header-height);
+        a:hover {
+            color: $header-content-color;
+        }
+        
+    }
+
+    .menu-item, .menu-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        user-select: none;
+        overflow: hidden;
+        &:hover {
+            background-color: black;
+        }
+    }
+
+    .header-menu {
+        display: flex;
+        .menu-item {
+            
+            padding: 0 1.5rem;
+            transition: text-shadow ease-in-out .2s, background-color ease-in-out .2s;
+            &:visited {
+                color: $header-content-color;
+            } 
+            &:link {
+                color: $header-content-color;
+            }  
+        }
+    }
+
+    .header-dropdown-menu {
+        display: none;
+        &.show-on-small {
+            @media #{$small-and-down} {
+                display: flex !important;
+            }
+        }
+        .menu-icon {
+            padding: 0 1rem;
+            cursor: pointer;
+            transition: background-color ease-in-out .2s;
+            .material-icons {
+                font-size: 2.5rem;
+            }
+        }
+
+        .menu-container {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            min-width: 10rem;
+            background-color: $header-background-color;
+            .menu-item {
+                padding: 1rem 1.5rem;
+                border-top: solid rgba(255, 255, 255, .1) 1.5px;
+                transition: background-color ease-in-out .2s;
+                &:first-child {
+                    border-top: none;
+                }
+                &:visited {
+                    color: $header-content-color;
+                } 
+                &:link {
+                    color: $header-content-color;
+                } 
+            }
+        }
+    }
+
+    &.transparent {
+        background-color: transparent;
+        box-shadow: none;
+        .logo {
+            img {
+                @extend .z-depth-1;
+                &:hover {
+                    @extend .z-depth-2;
+                }
+            }
+            a {
+                @extend .grey-text.text-lighten-4;
+                text-shadow: 0px 1px 2px #333;
+                &:hover {
+                    text-shadow: 0px 3px 6px #333;
+                }
+            }
+        }
+        .header-menu {
+            .menu-item {
+                @extend .grey-text.text-lighten-4;
+                text-shadow: 0px 1px 2px #333;
+                &:hover {
+                    text-shadow: 0px 3px 6px #333;
+                    background-color: transparent;
+                }
+            }
+        }
+
+        .header-dropdown-menu {
+            .menu-icon {
+                @extend .grey-text.text-lighten-4;
+                text-shadow: 0px 1px 2px #333;
+                transition: text-shadow ease-in-out .2s, background-color ease-in-out .2s;
+                &:hover {
+                    text-shadow: 0px 3px 6px #333;
+                    background-color: transparent;
+                }
+            }
+        }
+    }
 }
 
 

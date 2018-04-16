@@ -11,17 +11,26 @@
 </head>
 <!--class="global-background"-->
 <body>
-    <header class="small-header fix-top">
-        <div class="logo center-on-small">
-            <img src="avatar.jpg">
-            <a href="#">logo</a>
+    <header class="fix-top">
+        <div class="logo">
+            <img class="hide-on-small" src="avatar.jpg">
+            <a href="#">zcWSR</a>
         </div>
-        <ul class="header-menu hide-on-small">
-            <li><a href="#">item1</a></li>
-            <li><a href="#">item2</a></li>
-            <li><a href="#">item3</a></li>
-            <li><a href="#">item4</a></li>
-        </ul>
+        <div class="header-menu hide-on-small">
+            <a class="menu-item" href="#">item1</a>
+            <a class="menu-item" href="#">item2</a>
+            <a class="menu-item" href="#">item3</a>
+            <a class="menu-item" href="#">item4</a>
+        </div>
+        <div class="header-dropdown-menu show-on-small">
+            <div class="menu-icon"><i class="material-icons">menu</i></div>
+            <div class="menu-container">
+                <a class="menu-item" href="#">item1</a>
+                <a class="menu-item" href="#">item2</a>
+                <a class="menu-item" href="#">item3</a>
+                <a class="menu-item" href="#">item4</a>
+            </div>
+        </div>
     </header>
     <main>
         <!-- <div class="index affix">
@@ -310,6 +319,21 @@
             </div>
         </div>
     </footer>
+    <script>
+        const menuIcon = document.getElementsByClassName('menu-icon')[0];
+        const menuContainer = document.getElementsByClassName('menu-container')[0];
+        function toggleContainer () {
+            const style = menuContainer.style.display;
+            if (style || style === 'block') {
+                menuContainer.style.display = 'none';
+            } else {
+                menuContainer.style.display = 'block';
+            }
+        }
+        menuIcon.addEventListener('click', () => {
+
+        })
+    </script>
 </body>
 
 </html>
