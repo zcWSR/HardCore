@@ -3844,7 +3844,7 @@ footer a:active,
       text-align: center;
       animation: fade-in-from-bottom .25s linear .8s forwards; }
   .jumbotron.small {
-    height: 40vh; }
+    height: 20rem; }
     .jumbotron.small .post-title {
       position: absolute;
       left: 50%;
