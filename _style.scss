@@ -95,6 +95,57 @@
     }
 }
 
+header, .header {
+    &.transparent {
+        background-color: transparent;
+        box-shadow: none;
+        .logo {
+            img {
+                @extend .z-depth-1;
+                &:hover {
+                    @extend .z-depth-2;
+                }
+            }
+            a {
+                @extend .grey-text.text-lighten-4;
+                text-shadow: 0px 1px 2px #333;
+                &:hover {
+                    text-shadow: 0px 3px 6px #333;
+                }
+            }
+        }
+        .search {
+            input {
+                background-color: transparent;
+                color: white;
+                &:active, &:focus {
+                    background-color: rgba(140, 140, 140, 0.9);
+                }
+            }
+        }
+        .menu-item, .menu-icon{
+            @extend .grey-text.text-lighten-4;
+            text-shadow: 0px 1px 2px #333;
+            transition: text-shadow ease-in-out .2s, background-color ease-in-out .2s;
+            &:hover {
+                text-shadow: 0px 3px 6px #333;
+                background-color: transparent;
+            }
+        }
+
+        .header-dropdown-menu {
+            .menu-container {
+                background-color: rgba(140, 140, 140, 0.9);
+                .menu-item {
+                    &:hover {
+                        background-color: rgba(140, 140, 140, 1);
+                    }
+                }
+            }
+        }
+    }
+}
+
 .cards-container {
     .card,
     .card-flat {

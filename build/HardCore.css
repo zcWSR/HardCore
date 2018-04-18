@@ -2097,10 +2097,10 @@ ul {
 .z-depth-0 {
   box-shadow: none !important; }
 
-.z-depth-1, header.transparent .logo img, .header.transparent .logo img, .card, .card .card-header p, button,
+.z-depth-1, .card, .card .card-header p, button,
 .btn,
 input[type="button"],
-input[type="submit"] {
+input[type="submit"], header.transparent .logo img, .header.transparent .logo img {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2); }
 
 .z-depth-1-half, .card .card-header p:hover, .card:hover, button:hover,
@@ -2109,10 +2109,10 @@ input[type="button"]:hover,
 input[type="submit"]:hover {
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2); }
 
-.z-depth-2, header, .header, header.transparent .logo img:hover, .header.transparent .logo img:hover, button:focus,
+.z-depth-2, header, .header, button:focus,
 .btn:focus,
 input[type="button"]:focus,
-input[type="submit"]:focus {
+input[type="submit"]:focus, header.transparent .logo img:hover, .header.transparent .logo img:hover {
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3); }
 
 .z-depth-3 {
@@ -2790,6 +2790,25 @@ header, .header {
       color: #c1c1c1; }
     header .logo a:hover, .header .logo a:hover {
       color: #c1c1c1; }
+  header .right, .header .right {
+    display: flex; }
+  header .search, .header .search {
+    display: flex; }
+    header .search form, .header .search form {
+      display: flex; }
+    header .search input, .header .search input {
+      display: flex;
+      justify-content: center;
+      background: transparent;
+      border: none;
+      color: #EEE;
+      padding-left: 2em;
+      transition: width .2s linear, background-color .3s ease-in-out;
+      width: 10em;
+      outline: none; }
+      header .search input:active, header .search input:focus, .header .search input:active, .header .search input:focus {
+        background-color: black;
+        width: 15em; }
   header .menu-item, header .menu-icon, .header .menu-item, .header .menu-icon {
     display: flex;
     align-items: center;
@@ -2801,6 +2820,7 @@ header, .header {
   header .header-menu, .header .header-menu {
     display: flex; }
     header .header-menu .menu-item, .header .header-menu .menu-item {
+      min-width: 6em;
       padding: 0 1.5rem;
       transition: text-shadow ease-in-out .2s, background-color ease-in-out .2s; }
       header .header-menu .menu-item:visited, .header .header-menu .menu-item:visited {
@@ -2836,23 +2856,6 @@ header, .header {
           color: #c1c1c1; }
         header .header-dropdown-menu .menu-container .menu-item:link, .header .header-dropdown-menu .menu-container .menu-item:link {
           color: #c1c1c1; }
-  header.transparent, .header.transparent {
-    background-color: transparent;
-    box-shadow: none; }
-    header.transparent .logo a, .header.transparent .logo a {
-      text-shadow: 0px 1px 2px #333; }
-      header.transparent .logo a:hover, .header.transparent .logo a:hover {
-        text-shadow: 0px 3px 6px #333; }
-    header.transparent .menu-item, header.transparent .menu-icon, .header.transparent .menu-item, .header.transparent .menu-icon {
-      text-shadow: 0px 1px 2px #333;
-      transition: text-shadow ease-in-out .2s, background-color ease-in-out .2s; }
-      header.transparent .menu-item:hover, header.transparent .menu-icon:hover, .header.transparent .menu-item:hover, .header.transparent .menu-icon:hover {
-        text-shadow: 0px 3px 6px #333;
-        background-color: transparent; }
-    header.transparent .header-dropdown-menu .menu-container, .header.transparent .header-dropdown-menu .menu-container {
-      background-color: rgba(140, 140, 140, 0.9); }
-      header.transparent .header-dropdown-menu .menu-container .menu-item:hover, .header.transparent .header-dropdown-menu .menu-container .menu-item:hover {
-        background-color: #8c8c8c; }
 
 .jumbotron {
   position: relative;
@@ -3887,6 +3890,29 @@ footer a:active,
                 font-size: 0.8rem;
                 vertical-align: middle;
                 margin-right: 0.5rem; }
+
+header.transparent, .header.transparent {
+  background-color: transparent;
+  box-shadow: none; }
+  header.transparent .logo a, .header.transparent .logo a {
+    text-shadow: 0px 1px 2px #333; }
+    header.transparent .logo a:hover, .header.transparent .logo a:hover {
+      text-shadow: 0px 3px 6px #333; }
+  header.transparent .search input, .header.transparent .search input {
+    background-color: transparent;
+    color: white; }
+    header.transparent .search input:active, header.transparent .search input:focus, .header.transparent .search input:active, .header.transparent .search input:focus {
+      background-color: rgba(140, 140, 140, 0.9); }
+  header.transparent .menu-item, header.transparent .menu-icon, .header.transparent .menu-item, .header.transparent .menu-icon {
+    text-shadow: 0px 1px 2px #333;
+    transition: text-shadow ease-in-out .2s, background-color ease-in-out .2s; }
+    header.transparent .menu-item:hover, header.transparent .menu-icon:hover, .header.transparent .menu-item:hover, .header.transparent .menu-icon:hover {
+      text-shadow: 0px 3px 6px #333;
+      background-color: transparent; }
+  header.transparent .header-dropdown-menu .menu-container, .header.transparent .header-dropdown-menu .menu-container {
+    background-color: rgba(140, 140, 140, 0.9); }
+    header.transparent .header-dropdown-menu .menu-container .menu-item:hover, .header.transparent .header-dropdown-menu .menu-container .menu-item:hover {
+      background-color: #8c8c8c; }
 
 .cards-container .card,
 .cards-container .card-flat {
