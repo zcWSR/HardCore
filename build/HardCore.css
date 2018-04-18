@@ -1477,7 +1477,7 @@
 .grey.lighten-4 {
   background-color: #f5f5f5 !important; }
 
-.grey-text.text-lighten-4, header.transparent .logo a, .header.transparent .logo a, header.transparent .header-menu .menu-item, .header.transparent .header-menu .menu-item, header.transparent .header-dropdown-menu .menu-icon, .header.transparent .header-dropdown-menu .menu-icon {
+.grey-text.text-lighten-4, header.transparent .logo a, .header.transparent .logo a, header.transparent .menu-item, header.transparent .menu-icon, .header.transparent .menu-item, .header.transparent .menu-icon {
   color: #f5f5f5 !important; }
 
 .grey.lighten-3 {
@@ -2843,17 +2843,16 @@ header, .header {
       text-shadow: 0px 1px 2px #333; }
       header.transparent .logo a:hover, .header.transparent .logo a:hover {
         text-shadow: 0px 3px 6px #333; }
-    header.transparent .header-menu .menu-item, .header.transparent .header-menu .menu-item {
-      text-shadow: 0px 1px 2px #333; }
-      header.transparent .header-menu .menu-item:hover, .header.transparent .header-menu .menu-item:hover {
-        text-shadow: 0px 3px 6px #333;
-        background-color: transparent; }
-    header.transparent .header-dropdown-menu .menu-icon, .header.transparent .header-dropdown-menu .menu-icon {
+    header.transparent .menu-item, header.transparent .menu-icon, .header.transparent .menu-item, .header.transparent .menu-icon {
       text-shadow: 0px 1px 2px #333;
       transition: text-shadow ease-in-out .2s, background-color ease-in-out .2s; }
-      header.transparent .header-dropdown-menu .menu-icon:hover, .header.transparent .header-dropdown-menu .menu-icon:hover {
+      header.transparent .menu-item:hover, header.transparent .menu-icon:hover, .header.transparent .menu-item:hover, .header.transparent .menu-icon:hover {
         text-shadow: 0px 3px 6px #333;
         background-color: transparent; }
+    header.transparent .header-dropdown-menu .menu-container, .header.transparent .header-dropdown-menu .menu-container {
+      background-color: rgba(140, 140, 140, 0.9); }
+      header.transparent .header-dropdown-menu .menu-container .menu-item:hover, .header.transparent .header-dropdown-menu .menu-container .menu-item:hover {
+        background-color: #8c8c8c; }
 
 .jumbotron {
   position: relative;
@@ -3480,6 +3479,8 @@ header, .header {
   background-color: #f6f8fa; }
 
 .markdown-body img {
+  display: block;
+  margin: 0 auto;
   max-width: 100%;
   box-sizing: content-box;
   background-color: #fff; }
@@ -3688,20 +3689,21 @@ input[type="submit"] {
     display: inherit; }
     .index > ul > li > a {
       display: inherit;
-      color: #444;
+      color: #999;
       font-size: 0.75rem;
       text-align: right;
       padding: 3px 5px;
       height: 25px;
       overflow: visible;
-      will-change: color, opacity, border-radius;
+      will-change: color, border-radius;
       transition: .3s ease; }
       .index > ul > li > a::before {
         content: '';
+        border-radius: 50%;
         float: right;
         width: 0.75rem;
         height: 0.75rem;
-        border: 2px solid #444;
+        border: 2px solid #999;
         background: transparent;
         opacity: .7; }
       .index > ul > li > a > span {
@@ -3709,17 +3711,16 @@ input[type="submit"] {
         line-height: 0.75rem;
         overflow: hidden;
         margin-right: 1.125rem;
-        opacity: 0;
-        transition: opacity .3s ease; }
+        transition: color .3s ease; }
         .index > ul > li > a > span:hover {
-          color: #777;
+          color: #222;
           opacity: 1; }
     .index > ul > li[active] > a > span, .index > ul > li.active > a > span {
-      color: #444;
+      color: #222;
       opacity: 1; }
     .index > ul > li[active] > a::before, .index > ul > li.active > a::before {
-      border-radius: 50%;
-      background: #444; }
+      border: 2px solid #222;
+      background: #222; }
 
 .pager {
   display: block;
