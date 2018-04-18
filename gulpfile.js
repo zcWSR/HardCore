@@ -9,7 +9,6 @@ gulp.task('build', () => {
     return gulp.src('./HardCore.scss')
     .pipe(gulp_sass().on('error',gulp_sass.logError))
     .pipe(gulp.dest('./build'))
-    .pipe(gulp.dest(dest));
 });
 
 gulp.task('watch', () => {
