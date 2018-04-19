@@ -2894,36 +2894,44 @@ header, .header {
       opacity: 0; }
 
 .card,
-.card-flat {
+.card-flat,
+.card-simple {
   overflow: hidden;
   will-change: background, filter, box-shadow;
   transition: .3s; }
   .card .card-header,
-  .card-flat .card-header {
+  .card-flat .card-header,
+  .card-simple .card-header {
     position: relative; }
     .card .card-header .header-img,
-    .card-flat .card-header .header-img {
+    .card-flat .card-header .header-img,
+    .card-simple .card-header .header-img {
       position: absolute;
       width: 100%;
       height: 100%;
       overflow: hidden; }
     .card .card-header p > a,
-    .card-flat .card-header p > a {
+    .card-flat .card-header p > a,
+    .card-simple .card-header p > a {
       text-decoration: none;
       color: black;
       transition: color ease-out .3s; }
       .card .card-header p > a:hover,
-      .card-flat .card-header p > a:hover {
+      .card-flat .card-header p > a:hover,
+      .card-simple .card-header p > a:hover {
         text-decoration: none;
         color: #424242; }
       .card .card-header p > a:visited,
-      .card-flat .card-header p > a:visited {
+      .card-flat .card-header p > a:visited,
+      .card-simple .card-header p > a:visited {
         color: #616161; }
     .card .card-header:hover,
-    .card-flat .card-header:hover {
+    .card-flat .card-header:hover,
+    .card-simple .card-header:hover {
       background-size: 97.5% 100%; }
   .card:after,
-  .card-flat:after {
+  .card-flat:after,
+  .card-simple:after {
     content: "";
     display: table;
     clear: both; }
@@ -2998,6 +3006,40 @@ header, .header {
       .card-flat .card-info > ul li ul {
         display: inline; }
         .card-flat .card-info > ul li ul li {
+          display: inline;
+          font-size: 0.8rem;
+          vertical-align: middle;
+          margin-right: 0.5rem; }
+
+.card-simple .card-header p {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  font-size: 1.5rem;
+  padding: .5rem 1rem .5rem 0; }
+
+.card-simple .highlight {
+  display: inline;
+  padding: 0 !important;
+  color: #dd605f; }
+
+.card-simple .card-info {
+  font-size: 0.8rem; }
+  .card-simple .card-info.with-border {
+    border-bottom: 1px solid #ecf0f1; }
+  .card-simple .card-info > ul {
+    list-style: none; }
+    .card-simple .card-info > ul li {
+      display: inline-block;
+      margin: 1rem 1.4rem 1rem 0; }
+      .card-simple .card-info > ul li i {
+        display: inline;
+        font-size: 0.8rem;
+        vertical-align: middle;
+        margin-right: 0.5rem; }
+      .card-simple .card-info > ul li ul {
+        display: inline; }
+        .card-simple .card-info > ul li ul li {
           display: inline;
           font-size: 0.8rem;
           vertical-align: middle;
@@ -3660,6 +3702,7 @@ input[type="submit"] {
   cursor: pointer; }
   .select .label {
     display: inline-block;
+    vertical-align: top;
     font-size: 1.2em;
     max-width: 80%;
     margin-right: 1em;
@@ -3704,6 +3747,26 @@ input[type="submit"] {
 .select:disabled,
 .select.disabled,
 .select[disabled] {
+  pointer-events: none;
+  cursor: not-allowed;
+  opacity: 0.65; }
+
+input[type="text"].text-input {
+  display: inline-block;
+  position: relative;
+  padding: 0.5em;
+  font-size: 1.2em;
+  width: 15em;
+  outline: none;
+  border: none;
+  border-bottom: #9e9e9e 2px solid;
+  transition: border-bottom .3s linear; }
+  input[type="text"].text-input:hover, input[type="text"].text-input:focus {
+    border-bottom: #3f51b5 2px solid; }
+
+input[type="text"].disabled,
+input[type="text"][disabled],
+input[type="text"]:disabled {
   pointer-events: none;
   cursor: not-allowed;
   opacity: 0.65; }
