@@ -65,29 +65,31 @@
                 animation: fade-in-from-bottom .25s linear .4s forwards;
             }
             .info {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
                 opacity: 0;
                 margin-top: 1em;
                 animation: fade-in-from-bottom .25s linear .8s forwards;
-                &>ul {
-                    list-style: none;
-                    li {
-                        display: inline;
+                .label-group {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 1em;
+                    font-size: 0.8rem;
+                    margin-right: 2em;
+                    .label-icon {
+                        flex: 0 0 auto;
                         margin-right: 1rem;
-                        i {
-                            display: inline;
-                            font-size: 0.8rem;
-                            vertical-align: middle;
-                            margin-right: 0.5rem;
+                    }
+                    .label {
+                        flex: 0 0 auto;
+                        margin-right: 1rem;
+                        &:last-child {
+                            margin-right: 0;
                         }
-                        ul {
-                            display: inline;
-                            li {
-                                display: inline;
-                                font-size: 0.8rem;
-                                vertical-align: middle;
-                                margin-right: 0.5rem;
-                            }
-                        }
+                    }
+                    &:last-child {
+                        margin-right: 0;
                     }
                 }
             }
@@ -119,7 +121,7 @@ header, .header {
                 background-color: transparent;
                 color: white;
                 &:active, &:focus {
-                    background-color: rgba(140, 140, 140, 0.9);
+                    background-color: transparent;
                 }
             }
         }

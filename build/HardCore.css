@@ -2896,7 +2896,8 @@ header, .header {
 .card,
 .card-flat,
 .card-simple {
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
   will-change: background, filter, box-shadow;
   transition: .3s; }
   .card .card-header,
@@ -2989,27 +2990,27 @@ header, .header {
   font-size: 19.2px; }
 
 .card-flat .card-info {
+  display: flex;
+  flex-wrap: wrap;
   font-size: 0.8rem; }
   .card-flat .card-info.with-border {
     border-top: 1px solid #ecf0f1;
     border-bottom: 1px solid #ecf0f1; }
-  .card-flat .card-info > ul {
-    list-style: none; }
-    .card-flat .card-info > ul li {
-      display: inline-block;
-      margin: 1.4rem 1.4rem 1.4rem 0; }
-      .card-flat .card-info > ul li i {
-        display: inline;
-        font-size: 0.8rem;
-        vertical-align: middle;
-        margin-right: 0.5rem; }
-      .card-flat .card-info > ul li ul {
-        display: inline; }
-        .card-flat .card-info > ul li ul li {
-          display: inline;
-          font-size: 0.8rem;
-          vertical-align: middle;
-          margin-right: 0.5rem; }
+  .card-flat .card-info .label-group {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    margin: 1.4rem 1.4rem 1.4rem 0; }
+    .card-flat .card-info .label-group .label-icon {
+      flex: 0 0 auto;
+      margin-right: 1rem; }
+    .card-flat .card-info .label-group .label {
+      flex: 0 0 auto;
+      margin-right: 1rem; }
+      .card-flat .card-info .label-group .label:last-child {
+        margin-right: 0; }
+    .card-flat .card-info .label-group:last-child {
+      margin-right: 0; }
 
 .card-simple .card-header p {
   position: relative;
@@ -3994,26 +3995,28 @@ footer a:active,
         margin-top: 1em;
         animation: fade-in-from-bottom .25s linear .4s forwards; }
       .jumbotron.small .post-title .info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         opacity: 0;
         margin-top: 1em;
         animation: fade-in-from-bottom .25s linear .8s forwards; }
-        .jumbotron.small .post-title .info > ul {
-          list-style: none; }
-          .jumbotron.small .post-title .info > ul li {
-            display: inline;
+        .jumbotron.small .post-title .info .label-group {
+          display: flex;
+          align-items: center;
+          margin-bottom: 1em;
+          font-size: 0.8rem;
+          margin-right: 2em; }
+          .jumbotron.small .post-title .info .label-group .label-icon {
+            flex: 0 0 auto;
             margin-right: 1rem; }
-            .jumbotron.small .post-title .info > ul li i {
-              display: inline;
-              font-size: 0.8rem;
-              vertical-align: middle;
-              margin-right: 0.5rem; }
-            .jumbotron.small .post-title .info > ul li ul {
-              display: inline; }
-              .jumbotron.small .post-title .info > ul li ul li {
-                display: inline;
-                font-size: 0.8rem;
-                vertical-align: middle;
-                margin-right: 0.5rem; }
+          .jumbotron.small .post-title .info .label-group .label {
+            flex: 0 0 auto;
+            margin-right: 1rem; }
+            .jumbotron.small .post-title .info .label-group .label:last-child {
+              margin-right: 0; }
+          .jumbotron.small .post-title .info .label-group:last-child {
+            margin-right: 0; }
 
 header.transparent, .header.transparent {
   background-color: transparent;
@@ -4026,7 +4029,7 @@ header.transparent, .header.transparent {
     background-color: transparent;
     color: white; }
     header.transparent .search input:active, header.transparent .search input:focus, .header.transparent .search input:active, .header.transparent .search input:focus {
-      background-color: rgba(140, 140, 140, 0.9); }
+      background-color: transparent; }
   header.transparent .menu-item, header.transparent .menu-icon, .header.transparent .menu-item, .header.transparent .menu-icon {
     text-shadow: 0px 1px 2px #333;
     transition: text-shadow ease-in-out .2s, background-color ease-in-out .2s; }

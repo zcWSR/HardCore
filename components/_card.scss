@@ -1,7 +1,8 @@
 .card,
 .card-flat,
 .card-simple {
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
     will-change: background, filter, box-shadow; 
     transition: .3s;
     .card-header {
@@ -128,31 +129,32 @@
     }
 
     .card-info {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: $card-info-font-size;
         &.with-border {
             border-top: 1px solid #ecf0f1;
             border-bottom: 1px solid #ecf0f1;
         } 
-        font-size: $card-info-font-size;
-        &>ul {
-            list-style: none;
-            li {
-                display: inline-block;
-                margin: 1.4rem 1.4rem 1.4rem 0;
-                i {
-                    display: inline;
-                    font-size: $card-info-font-size;
-                    vertical-align: middle;
-                    margin-right: 0.5rem;
+        
+        .label-group {
+            display: flex;
+            align-items: center;
+            font-size: $card-info-font-size;
+            margin: 1.4rem 1.4rem 1.4rem 0;
+            .label-icon {
+                flex: 0 0 auto;
+                margin-right: 1rem;
+            }
+            .label {
+                flex: 0 0 auto;
+                margin-right: 1rem;
+                &:last-child {
+                    margin-right: 0;
                 }
-                ul {
-                    display: inline;
-                    li {
-                        display: inline;
-                        font-size: $card-info-font-size;
-                        vertical-align: middle;
-                        margin-right: 0.5rem;
-                    }
-                }
+            }
+            &:last-child {
+                margin-right: 0;
             }
         }
     }
