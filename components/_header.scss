@@ -20,12 +20,46 @@ header, .header {
         padding: 0 1.5rem;
         font-size: $small-header-height * 0.70;
         overflow: hidden;
-        img {
+
+        .logo-icon {
+            position: relative;
+            display: block;
             margin-right: 1rem;
             width: $small-header-height * .8;
+            height: $small-header-height * .8;
             border: solid $header-content-color 1px;
             border-radius: 50%;
             transition: box-shadow ease-in-out .3s;
+            overflow: hidden;
+            img {
+                width: 100%;
+            }
+            .icon-mask {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                background: rgba(255, 255, 255, .8);
+                opacity: 0;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                transition: opacity .3s ease-in-out;
+                .fa {
+                    color: white;
+                    font-size: $small-header-height * .5;
+                    
+                }
+                &:hover {
+                    opacity: 1;
+                }
+                &:active {
+                    .fa {
+                        color: rgba(0, 0, 0, 0.5);
+                    }
+                }
+            }
         }
 
         a {
